@@ -3,7 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
 
-export default function ProductCard({ product }) {
+export default function ProductCard(product: {
+  name: string
+  slug: string
+  image: string
+  alt: string
+}) {
   return (
     <div className='bg-white rounded-lg shadow-md p-4 hover:shadow-lg transition-shadow duration-300'>
       <Link href={`/san-pham/${product.slug}`} className='block'>
