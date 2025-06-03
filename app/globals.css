@@ -1,26 +1,30 @@
 @import "tailwindcss";
 
+/*define variable of color below*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --text-primary-color: #0052a4;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.text-primary {
+    color: var(--text-primary-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.bg-primary {
+    background-color: var(--text-primary-color);
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.bg-primary-dark {
+    background-color: #03488d;
+}
+
+.bg-secondary {
+    background-color: #013263;
+}
+
+.bg-primary-light {
+    background-color: #ffffff;
+}
+
+.bg-primary-light:hover {
+    background-color: #03488d;
 }

@@ -1,0 +1,158 @@
+{
+  "mainMenu": [
+    {
+      "id": "gioi-thieu",
+      "label": "Giới thiệu",
+      "href": "/gioi-thieu",
+      "hasDropdown": false
+    },
+    {
+      "id": "ho-so-nang-luc",
+      "label": "Hồ sơ năng lực",
+      "href": "/ho-so-nang-luc",
+      "hasDropdown": false
+    },
+    {
+      "id": "san-pham",
+      "label": "Sản phẩm",
+      "href": "/san-pham",
+      "hasDropdown": true,
+      "dropdownItems": [
+        {
+          "id": "cua-cuon-chong-chay",
+          "label": "Cửa cuốn chống cháy",
+          "href": "/san-pham/cua-cuon-chong-chay"
+        },
+        {
+          "id": "cua-kinh-chong-chay",
+          "label": "Cửa kính chống cháy",
+          "href": "/san-pham/cua-kinh-chong-chay"
+        },
+        {
+          "id": "cua-thep-chong-chay",
+          "label": "Cửa thép chống cháy",
+          "href": "/san-pham/cua-thep-chong-chay"
+        },
+        {
+          "id": "vach-chong-chay",
+          "label": "Vách chống cháy",
+          "href": "/san-pham/vach-chong-chay"
+        },
+        {
+          "id": "man-ngan-chong-chay",
+          "label": "Mân ngân chống cháy",
+          "href": "/san-pham/man-ngan-chong-chay"
+        }
+      ]
+    },
+    {
+      "id": "du-an",
+      "label": "Dự án",
+      "href": "/du-an",
+      "hasDropdown": true,
+      "dropdownItems": [
+        {
+          "id": "blog",
+          "label": "Blog & Bài viết",
+          "href": "/tai-nguyen/blog",
+          "description": "Kiến thức và xu hướng Chống cháy mới nhất"
+        },
+        {
+          "id": "ebook",
+          "label": "E-book miễn phí",
+          "href": "/tai-nguyen/ebook",
+          "description": "Tải xuống các tài liệu chuyên môn miễn phí"
+        },
+        {
+          "id": "webinar",
+          "label": "Webinar & Sự kiện",
+          "href": "/tai-nguyen/webinar",
+          "description": "Tham gia các buổi chia sẻ trực tuyến"
+        },
+        {
+          "id": "tools",
+          "label": "Công cụ hỗ trợ",
+          "href": "/tai-nguyen/tools",
+          "description": "Các công cụ miễn phí hỗ trợ Chống cháy"
+        }
+      ]
+    },
+    {
+      "id": "tin-tuc",
+      "label": "Tin tức",
+      "href": "/tin-tuc",
+      "hasDropdown": true,
+      "dropdownItems": [
+        {
+          "id": "tin-tuc-1",
+          "label": "Tin tức 1",
+          "href": "/tin-tuc/tin-tuc-1"
+        },
+        {
+          "id": "tin-tuc-2",
+          "label": "Tin tức 2",
+          "href": "/tin-tuc/tin-tuc-2"
+        },
+        {
+          "id": "tin-tuc-3",
+          "label": "Tin tức 3",
+          "href": "/tin-tuc/tin-tuc-3"
+        }
+      ]
+    },
+    {
+      "id": "lien-he",
+      "label": "Liên hệ",
+      "href": "/lien-he",
+      "hasDropdown": false
+    }
+  ],
+  "footerMenu": {
+    "products": [
+      {
+        "label": "Cửa cuốn chống cháy",
+        "href": "/san-pham/cua-cuon-chong-chay"
+      },
+      {
+        "label": "Cửa kính chống cháy",
+        "href": "/san-pham/cua-kinh-chong-chay"
+      },
+      {
+        "label": "Cửa thép chống cháy",
+        "href": "/san-pham/cua-thep-chong-chay"
+      },
+      {
+        "label": "Vách chống cháy",
+        "href": "/san-pham/vach-chong-chay"
+      },
+      {
+        "label": "Mân ngân chống cháy",
+        "href": "/san-pham/man-ngan-chong-chay"
+      }
+    ],
+    "company": [
+      {
+        "label": "Giới thiệu",
+        "href": "/gioi-thieu"
+      },
+      {
+        "label": "Hồ sơ năng lực",
+        "href": "/ho-so-nang-luc"
+      },
+      {
+        "label": "Liên hệ",
+        "href": "/lien-he"
+      }
+    ],
+    "resources": [
+      {
+        "label": "Dự án",
+        "href": "/du-an"
+      },
+      {
+        "label": "Tin tức",
+        "href": "/tin-tuc"
+      }
+    ]
+  }
+}
