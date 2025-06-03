@@ -1,7 +1,6 @@
-import { ChevronRight } from 'lucide-react'
+import ArticleHeader from '@/components/breadcrum'
 import { Metadata } from 'next'
 import Image from 'next/image'
-import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Hồ sơ năng lực',
@@ -10,29 +9,14 @@ export const metadata: Metadata = {
 export default function CapabilityProfilePage() {
   return (
     <div>
-      {/* Breadcrumb */}
-      <div className='bg-secondary text-white py-4'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <nav className='flex items-center space-x-2 text-sm'>
-            <Link href='/' className='hover:underline'>
-              Trang chủ
-            </Link>
-            <ChevronRight className='w-4 h-4' />
-            <span>Hồ sơ năng lực</span>
-          </nav>
-        </div>
-      </div>
-      {/* Article Header */}
-      <div className='bg-secondary text-white py-12'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <h1 className='text-4xl md:text-5xl font-bold mb-8 text-center'>
-            HỒ SƠ NĂNG LỰC | CATALOGUE
-          </h1>
-          <h2 className='text-center'>
-            CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT
-          </h2>
-        </div>
-      </div>
+      <ArticleHeader
+        title='HỒ SƠ NĂNG LỰC | CATALOGUE'
+        subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'
+        breadcrumbItems={[
+          { label: 'Trang chủ', href: '/' },
+          { label: 'Hồ sơ năng lực' }
+        ]}
+      />
       <div className='max-w-7xl mx-auto px-4 py-12'>
         <div className='w-fit text-center mx-auto'>
           <a

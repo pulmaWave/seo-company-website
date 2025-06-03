@@ -1,6 +1,5 @@
 'use client'
-import { ChevronRight } from 'lucide-react'
-import Link from 'next/link'
+import ArticleHeader from '@/components/breadcrum'
 import { useState } from 'react'
 
 export default function ContactPage() {
@@ -36,31 +35,14 @@ export default function ContactPage() {
 
   return (
     <div>
-      <div className='bg-teal-800 text-white py-4'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <nav className='flex items-center space-x-2 text-sm'>
-            <Link href='/' className='hover:underline'>
-              Trang chủ
-            </Link>
-            <ChevronRight className='w-4 h-4' />
-            <Link href='#' className='hover:underline'>
-              Liên hệ
-            </Link>
-          </nav>
-        </div>
-      </div>
-      <div className='bg-teal-800 text-white py-12'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <h1 className='text-4xl md:text-5xl font-bold mb-8'>
-            LIÊN HỆ | TRẦN GIA PHÁT
-          </h1>
-          <div className='flex flex-wrap items-center gap-6 text-sm'>
-            <div className='flex items-center gap-2'>
-              <span>CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT</span>
-            </div>
-          </div>
-        </div>
-      </div>
+      <ArticleHeader
+        title='LIÊN HỆ | TRẦN GIA PHÁT'
+        subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'
+        breadcrumbItems={[
+          { label: 'Trang chủ', href: '/' },
+          { label: 'Liên hệ' }
+        ]}
+      />
       <div className='flex grid-cols-2 mx-auto max-w-7xl px-4 py-12 gap-4'>
         <div className='flex-1/2 px-4 py-12'>Địa chỉ văn phòng</div>
         <div className='flex-1/2 px-4 py-12'>

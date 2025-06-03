@@ -1,8 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { User, ChevronRight } from 'lucide-react'
 
 import { Metadata } from 'next'
+import ArticleHeader from '@/components/breadcrum'
 
 export const metadata: Metadata = {
   title: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình',
@@ -26,39 +26,15 @@ export const metadata: Metadata = {
 export default function ArticlePage() {
   return (
     <div className='min-h-screen'>
-      {/* Breadcrumb */}
-      <div className='bg-secondary text-white py-4'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <nav className='flex items-center space-x-2 text-sm'>
-            <Link href='/' className='hover:underline'>
-              Trang chủ
-            </Link>
-            <ChevronRight className='w-4 h-4' />
-            <Link href='/san-pham' className='hover:underline'>
-              Sản phẩm
-            </Link>
-            <ChevronRight className='w-4 h-4' />
-            <span>Cửa kính chống cháy</span>
-          </nav>
-        </div>
-      </div>
-
-      {/* Article Header */}
-      <div className='bg-secondary text-white py-12'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <h1 className='text-4xl md:text-5xl font-bold mb-8 leading-tight'>
-            CỬA KÍNH CHỐNG CHÁY - GIẢI PHÁP AN TOÀN CHO CÔNG TRÌNH
-          </h1>
-
-          <div className='flex flex-wrap items-center gap-6 text-sm'>
-            <div className='flex items-center gap-2'>
-              <User className='w-4 h-4' />
-              <span>Tác giả: Trần Gia Phát</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <ArticleHeader
+        title='CỬA KÍNH CHỐNG CHÁY - GIẢI PHÁP AN TOÀN CHO CÔNG TRÌNH'
+        subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'
+        breadcrumbItems={[
+          { label: 'Trang chủ', href: '/' },
+          { label: 'Sản phẩm', href: '/san-pham' },
+          { label: 'Cửa kính chống cháy' }
+        ]}
+      />
       {/* Article Content */}
       <div className='max-w-7xl mx-auto px-4 py-12'>
         <div className='grid lg:grid-cols-4 gap-8'>

@@ -1,7 +1,6 @@
 // introduce company page
 import { Metadata } from 'next'
-import Link from 'next/link'
-import { ChevronRight } from 'lucide-react'
+import ArticleHeader from '@/components/breadcrum'
 
 export const metadata: Metadata = {
   title: 'Tin tức',
@@ -11,31 +10,14 @@ export const metadata: Metadata = {
 export default function IntroducePage() {
   return (
     <div>
-      {/* Breadcrumb */}
-      <div className='bg-teal-800 text-white py-4'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <nav className='flex items-center space-x-2 text-sm'>
-            <Link href='/' className='hover:underline'>
-              Trang chủ
-            </Link>
-            <ChevronRight className='w-4 h-4' />
-            <span>Tin tức</span>
-          </nav>
-        </div>
-      </div>
-
-      {/* Article Header */}
-      <div className='bg-teal-800 text-white py-12'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <h1 className='text-4xl md:text-5xl font-bold mb-8'>TIN TỨC</h1>
-          <div className='flex flex-wrap items-center gap-6 text-sm'>
-            <div className='flex items-center gap-2'>
-              <span>CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <ArticleHeader
+        title='TIN TỨC'
+        subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'
+        breadcrumbItems={[
+          { label: 'Trang chủ', href: '/' },
+          { label: 'Tin tức', href: '/tin-tuc' }
+        ]}
+      />
       {/* Article Content */}
       <div className='max-w-7xl mx-auto px-4 py-12'>TIN TỨC</div>
     </div>

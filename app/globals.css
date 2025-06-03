@@ -21,6 +21,12 @@
     background-color: #013263;
 }
 
+.bg-primary-2 {}
+
+.bg-primary-2:hover {
+    background-color: #03488d;
+}
+
 .bg-primary-light {
     background-color: #ffffff;
 }
