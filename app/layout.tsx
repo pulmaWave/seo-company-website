@@ -2,6 +2,7 @@ import './globals.css'
 import Navigation from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { Phone, Mail } from 'lucide-react'
+import ScrollToTop from '@/components/scrollToTop'
 
 export default async function RootLayout({
   children
@@ -21,15 +22,17 @@ export default async function RootLayout({
                 <div className='flex items-center gap-6'>
                   <span className='font-bold'>Liên hệ tư vấn:</span>
                   <div className='flex items-center gap-1'>
-                    <Phone className='w-4 h-4 text-blue-600' />
+                    <Phone className='w-4 h-4 text-primary' />
                     <span>0975 252 168</span>
                   </div>
                 </div>
-                <div className='flex items-center gap-4'>
-                  <span className='font-bold'>Email:</span>
-                  <div className='flex items-center gap-1'>
-                    <Mail className='w-4 h-4 text-blue-600' />
-                    <span>trangiaphat.corp@gmail.com</span>
+                <div className='hidden sm:block'>
+                  <div className='flex items-center gap-4'>
+                    <span className='font-bold'>Email:</span>
+                    <div className='flex items-center gap-1'>
+                      <Mail className='w-4 h-4 text-primary' />
+                      <span>trangiaphat.corp@gmail.com</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -38,6 +41,7 @@ export default async function RootLayout({
           </header>
           {children}
           <Footer />
+          <ScrollToTop />
         </div>
       </body>
     </html>
