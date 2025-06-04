@@ -3,6 +3,7 @@
 /*define variable of color below*/
 :root {
     --text-primary-color: #0052a4;
+    --header-h: 150px;
 }
 
 .text-primary {
@@ -33,4 +34,13 @@
 
 .bg-primary-light:hover {
     background-color: #03488d;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    scroll-margin-top: var(--header-h);
 }

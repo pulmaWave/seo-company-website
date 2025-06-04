@@ -1,4 +1,4 @@
-import ArticleHeader from '@/components/breadcrum'
+import ArticleHeader from '@/components/breadcrumb'
 import { Metadata } from 'next'
 import Image from 'next/image'
 

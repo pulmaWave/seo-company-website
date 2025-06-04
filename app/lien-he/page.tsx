@@ -1,5 +1,5 @@
 'use client'
-import ArticleHeader from '@/components/breadcrum'
+import ArticleHeader from '@/components/breadcrumb'
 import { useState } from 'react'
 
 export default function ContactPage() {

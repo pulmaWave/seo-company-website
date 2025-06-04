@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 import { Metadata } from 'next'
-import ArticleHeader from '@/components/breadcrum'
+import ArticleHeader from '@/components/breadcrumb'
 
 export const metadata: Metadata = {
   title: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 }
 export default function ArticlePage() {
   return (
-    <div className='min-h-screen'>
+    <div>
       <ArticleHeader
         title='CỬA KÍNH CHỐNG CHÁY - GIẢI PHÁP AN TOÀN CHO CÔNG TRÌNH'
         subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'
@@ -41,7 +41,7 @@ export default function ArticlePage() {
           {/* Main Content */}
           <div className='lg:col-span-3'>
             <article className='prose prose-lg max-w-none'>
-              <p className='text-lg leading-relaxed mb-6'>Viết bài ở đây</p>
+              <p className='text-lg leading-relaxed mb-6'></p>
 
               <p className='mb-6'>Tham khảo bài viết liên quan:</p>
 

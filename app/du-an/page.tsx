@@ -1,6 +1,6 @@
 // introduce company page
 import { Metadata } from 'next'
-import ArticleHeader from '@/components/breadcrum'
+import ArticleHeader from '@/components/breadcrumb'
 
 export const metadata: Metadata = {
   title: 'Dự án',
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function IntroducePage() {
   return (
-    <div>
+    <div className='min-h-screen'>
       <ArticleHeader
         title='DỰ ÁN CÔNG TY'
         subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'

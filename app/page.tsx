@@ -29,30 +29,32 @@ export default function HomePage() {
         <div className='relative w-full'>
           <div className='hidden md:block'>
             <div
-              className='relative h-[670px] bg-cover bg-center flex items-center'
+              className='relative md:h-[450px] lg:h-[600px] bg-cover bg-center flex items-center'
               style={{
                 backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.3), transparent), url('/banner.jpg')`
               }}
             >
               <div className='absolute inset-0 bg-gradient-to-r from-black to-transparent z-0' />
-              <div className='absolute left-30 text-white max-w-md py-20'>
+              <div className='absolute text-white max-w-7xl z-10 py-20 w-full left-1/2 -translate-x-1/2 px-4'>
                 <h1 className='text-4xl md:text-5xl font-bold leading-tight'>
-                  Trần Gia Phát{' '}
+                  TRẦN GIA PHÁT{' '}
                   <span className='block text-lg md:text-xl'>
-                    Sản phẩm Chống cháy
+                    Công ty Cổ phần Cơ khí Xây dựng
                   </span>
                   <br />
-                  Bảo vệ mọi công trình
+                  SẢN PHẨM CHỐNG CHÁY
                 </h1>
                 <p className='mt-2 text-base md:text-lg'>
-                  Cung cấp giải pháp Chống cháy hàng đầu tại Việt Nam, bảo vệ an
+                  Cung cấp giải pháp Chống cháy hàng đầu Việt Nam, bảo vệ an
                   toàn cho mọi công trình.
                 </p>
-                <button className='cursor-pointer mt-4 bg-primary text-white py-2 px-4 rounded-md hover:bg-se'>
-                  <Link href='/san-pham' className='hover:underline'>
-                    Xem sản phẩm
-                  </Link>
-                </button>
+                <div className='mt-6'>
+                  <button className='cursor-pointer mt-4 bg-primary text-white py-2 px-4 rounded-md hover:bg-secondary'>
+                    <Link href='/san-pham' className='hover:underline'>
+                      Xem sản phẩm
+                    </Link>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -60,23 +62,26 @@ export default function HomePage() {
             <div
               className='relative h-[300px] bg-cover bg-center flex items-center justify-center text-center'
               style={{
-                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/background-mobile.webp')`
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/banner.jpg')`
               }}
             >
               <div className='text-white'>
                 <h1 className='text-2xl md:text-3xl font-bold leading-tight'>
-                  #YouMake{' '}
+                  TRẦN GIA PHÁT{' '}
                   <span className='block text-sm md:text-base'>
-                    Ghép deal siêu phẩm
+                    Công ty Cổ phần Cơ khí Xây dựng
                   </span>
                   <br />
-                  Gắn kết tổ ấm
+                  SẢN PHẨM CHỐNG CHÁY
                 </h1>
-                <p className='mt-2 text-sm md:text-base'>
-                  Sắm chùng siêu phẩm, cùng thêm nữa đến 50%
+                <p className='mt-2 text-sm md:text-base px-4'>
+                  Cung cấp giải pháp Chống cháy hàng đầu Việt Nam, <br /> bảo vệ
+                  an toàn cho mọi công trình.
                 </p>
-                <button className='cursor-pointer mt-4 bg-primary text-white py-2 px-4 rounded-md hover:bg-primary/80'>
-                  Xem sản phẩm
+                <button className='cursor-pointer mt-4 bg-primary text-white py-2 px-4 rounded-md hover:bg-secondary'>
+                  <Link href='/san-pham' className='hover:underline'>
+                    Xem sản phẩm
+                  </Link>
                 </button>
               </div>
             </div>
