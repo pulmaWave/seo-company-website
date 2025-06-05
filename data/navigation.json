@@ -34,14 +34,14 @@
           "href": "/san-pham/cua-thep-chong-chay"
         },
         {
-          "id": "vach-chong-chay",
-          "label": "Vách chống cháy",
-          "href": "/san-pham/vach-chong-chay"
-        },
-        {
           "id": "tran-chong-chay",
           "label": "Trần chống cháy",
           "href": "/san-pham/tran-chong-chay"
+        },
+        {
+          "id": "vach-chong-chay",
+          "label": "Vách chống cháy",
+          "href": "/san-pham/vach-chong-chay"
         }
       ]
     },
@@ -52,28 +52,10 @@
       "hasDropdown": true,
       "dropdownItems": [
         {
-          "id": "blog",
-          "label": "Blog & Bài viết",
-          "href": "/tai-nguyen/blog",
+          "id": "kien-thuc-chong-chay",
+          "label": "Kiến thức và xu hướng Chống cháy",
+          "href": "/du-an/kien-thuc-chong-chay",
           "description": "Kiến thức và xu hướng Chống cháy mới nhất"
-        },
-        {
-          "id": "ebook",
-          "label": "E-book miễn phí",
-          "href": "/tai-nguyen/ebook",
-          "description": "Tải xuống các tài liệu chuyên môn miễn phí"
-        },
-        {
-          "id": "webinar",
-          "label": "Webinar & Sự kiện",
-          "href": "/tai-nguyen/webinar",
-          "description": "Tham gia các buổi chia sẻ trực tuyến"
-        },
-        {
-          "id": "tools",
-          "label": "Công cụ hỗ trợ",
-          "href": "/tai-nguyen/tools",
-          "description": "Các công cụ miễn phí hỗ trợ Chống cháy"
         }
       ]
     },
@@ -84,19 +66,9 @@
       "hasDropdown": true,
       "dropdownItems": [
         {
-          "id": "tin-tuc-1",
+          "id": "nha-ga-t3-san-bay-tan-son-nhat",
           "label": "Tin tức 1",
           "href": "/tin-tuc/tin-tuc-1"
-        },
-        {
-          "id": "tin-tuc-2",
-          "label": "Tin tức 2",
-          "href": "/tin-tuc/tin-tuc-2"
-        },
-        {
-          "id": "tin-tuc-3",
-          "label": "Tin tức 3",
-          "href": "/tin-tuc/tin-tuc-3"
         }
       ]
     },
@@ -122,12 +94,12 @@
         "href": "/san-pham/cua-thep-chong-chay"
       },
       {
-        "label": "Vách chống cháy",
-        "href": "/san-pham/vach-chong-chay"
+        "label": "Trần chống cháy",
+        "href": "/san-pham/tran-chong-chay"
       },
       {
-        "label": "Mân ngân chống cháy",
-        "href": "/san-pham/man-ngan-chong-chay"
+        "label": "Vách chống cháy",
+        "href": "/san-pham/vach-chong-chay"
       }
     ],
     "company": [

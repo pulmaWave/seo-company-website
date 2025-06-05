@@ -50,6 +50,45 @@ export const metadata: Metadata = {
 export default function ArticlePage() {
   return (
     <div>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'cửa cuốn chống cháy',
+            url: 'https://seo-company-website-1fes.vercel.app/san-pham/cua-cuon-chong-chay',
+            logo: 'https://seo-company-website-1fes.vercel.app/logo.png',
+            description: '',
+            contactPoint: {
+              '@type': 'ContactPoint',
+              telephone: '+84-975-252-168',
+              email: 'trangiaphat.corp@gmail.com',
+              contactType: 'customer service',
+              areaServed: 'VN',
+              availableLanguage: ['Vietnamese', 'English']
+            },
+            sameAs: [
+              'https://www.facebook.com/info.trangiaphat.vn',
+              'https://www.youtube.com/@trangiaphatvn'
+            ],
+            additionalType: 'https://schema.org/Organization',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress:
+                'Số 25, Đường 69, Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam',
+              addressLocality: 'Thủ Đức',
+              addressRegion: 'Hồ Chí Minh',
+              postalCode: '700000',
+              addressCountry: 'VN'
+            },
+            foundingDate: '2011-05-25',
+            foundingYear: 2011,
+            foundingLocation:
+              'Số 25, Đường 69, Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam'
+          })
+        }}
+      />
       <ArticleHeader
         title='CỬA CUỐN CHỐNG CHÁY - GIẢI PHÁP AN TOÀN CHO CÔNG TRÌNH'
         subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'

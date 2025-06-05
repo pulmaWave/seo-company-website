@@ -28,6 +28,11 @@ export default function NavigationEnhancer({
   const pathname = usePathname()
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const handleSublinkClick = () => {
+    setIsMenuOpen(false) // Ẩn menu khi nhấp vào sublink
+  }
 
   const isParentActive = (item: MenuItem): boolean => {
     if (pathname.startsWith(item.href)) return true
@@ -55,6 +60,7 @@ export default function NavigationEnhancer({
                   ? 'bg-primary-dark text-white hover:text-white'
                   : 'text-gray-800 bg-primary-light'
               } hover:text-white`}
+              onMouseMove={() => setIsMenuOpen(true)}
             >
               {item.label}
               {item.hasDropdown && (
@@ -65,10 +71,10 @@ export default function NavigationEnhancer({
                 />
               )}
             </Link>
-
             {item.hasDropdown &&
               activeDropdown === item.id &&
-              item.dropdownItems && (
+              item.dropdownItems &&
+              isMenuOpen && (
                 <ul className='absolute top-full left-0 w-60 bg-white border border-gray-200 rounded-b-md shadow-lg z-50 py-2'>
                   {item.dropdownItems.map((sub) => (
                     <li key={sub.id}>
@@ -79,6 +85,7 @@ export default function NavigationEnhancer({
                             ? 'bg-primary-dark font-medium text-white'
                             : 'text-gray-800'
                         }`}
+                        onClick={handleSublinkClick}
                       >
                         <div>{sub.label}</div>
                         {sub.description && (
@@ -94,7 +101,6 @@ export default function NavigationEnhancer({
           </div>
         ))}
       </div>
-
       {/* Mobile Menu Toggle Button */}
       <div className='lg:hidden'>
         <button
@@ -108,7 +114,6 @@ export default function NavigationEnhancer({
           )}
         </button>
       </div>
-
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className='fixed inset-0 z-50 bg-black bg-opacity-50'>
@@ -119,7 +124,6 @@ export default function NavigationEnhancer({
             >
               <X className='w-5 h-5' />
             </button>
-
             <nav className='mt-10 space-y-4'>
               {menuData.map((item) => (
                 <div key={item.id}>

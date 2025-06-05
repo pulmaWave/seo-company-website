@@ -24,7 +24,6 @@ export function Footer() {
               Đối tác tin cậy trong lĩnh vực Chống cháy tại Việt Nam.
             </p>
           </div>
-
           <div>
             <h4 className='font-semibold mb-4'>Sản phẩm</h4>
             <ul className='space-y-2 text-gray-300'>

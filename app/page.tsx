@@ -160,54 +160,19 @@ export default function HomePage() {
           </h2>
           <div className='grid md:grid-cols-2 gap-8'>
             <div>
-              <p className='text-gray-600'>
+              {/* <p className='text-gray-600'>
                 Công ty CP Cơ khí Xây dựng Trần Gia Phát luôn đặt chữ Tâm vào
                 sản xuất, không ngừng nâng cao chất lượng để mang đến sản phẩm
                 và dịch vụ tối ưu cho khách hàng. Với mục tiêu trở thành đơn vị
                 tiên phong trong lĩnh vực vật liệu chống cháy, chúng tôi đề cao
                 các giá trị cốt lõi trong kinh doanh, đặc biệt là sự trung thực
                 và tận tâm.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
       </section>
       {/* Services Preview */}
-      <section className='py-16 bg-gray-50'>
-        <div className='max-w-7xl mx-auto px-4'>
-          <h2 className='text-3xl font-bold text-center mb-12'>
-            Dịch vụ của chúng tôi
-          </h2>
-          <div className='grid md:grid-cols-3 gap-8'>
-            <div className='bg-white p-6 rounded-lg shadow-sm'>
-              <h3 className='text-xl font-semibold mb-4'>
-                SEO & Content Marketing
-              </h3>
-              <p className='text-gray-600'>
-                Tối ưu hóa website và xây dựng nội dung chất lượng để tăng thứ
-                hạng tìm kiếm.
-              </p>
-            </div>
-            <div className='bg-white p-6 rounded-lg shadow-sm'>
-              <h3 className='text-xl font-semibold mb-4'>Google Ads</h3>
-              <p className='text-gray-600'>
-                Quản lý và tối ưu hóa chiến dịch quảng cáo Google để tối đa hóa
-                ROI.
-              </p>
-            </div>
-            <div className='bg-white p-6 rounded-lg shadow-sm'>
-              <h3 className='text-xl font-semibold mb-4'>
-                Social Media Marketing
-              </h3>
-              <p className='text-gray-600'>
-                Xây dựng và phát triển thương hiệu trên các nền tảng mạng xã
-                hội.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Latest Articles */}
       <section className='py-16 bg-white'>
         <div className='max-w-7xl mx-auto px-4'>
@@ -221,8 +186,8 @@ export default function HomePage() {
             >
               <div className='bg-gray-100 rounded-lg overflow-hidden'>
                 <Image
-                  src='/placeholder.svg?height=200&width=300'
-                  alt='Top 13 công ty Chống cháy'
+                  src=''
+                  alt='Dự án Cửa cuốn chống cháy tại nhà ga T3 - Sân bay Tân Sơn Nhất'
                   width={300}
                   height={200}
                   className='w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300'
@@ -232,7 +197,7 @@ export default function HomePage() {
                     Dự án Cửa cuốn chống cháy tại nhà ga T3 - Sân bay Tân Sơn
                     Nhất
                   </h3>
-                  <p className='text-gray-600 text-sm'>23/11/2024</p>
+                  <p className='text-gray-600 text-sm'>Trần Gia Phát</p>
                 </div>
               </div>
             </Link>
