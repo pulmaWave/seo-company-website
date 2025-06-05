@@ -4,11 +4,91 @@ import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Hồ sơ năng lực',
-  description: 'Tải xuống hồ sơ năng lực của công ty chúng tôi'
+  description: 'Tải xuống hồ sơ năng lực của công ty chúng tôi',
+  openGraph: {
+    title: 'Hồ sơ năng lực | Trần Gia Phát',
+    description:
+      'Hồ sơ năng lực của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+    url: 'https://seo-company-website-1fes.vercel.app/ho-so-nang-luc',
+    images: [
+      {
+        url: 'https://seo-company-website-1fes.vercel.app/logo.png',
+        width: 130,
+        height: 130,
+        alt: 'Hồ sơ năng lực | Trần Gia Phát'
+      }
+    ]
+  },
+  twitter: {
+    title: 'Hồ sơ năng lực | Trần Gia Phát',
+    description:
+      'Hồ sơ năng lực của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
+  },
+  icons: {
+    icon: 'https://seo-company-website-1fes.vercel.app/favicon.ico'
+  },
+  keywords: [
+    'Hồ sơ năng lực',
+    'Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+    'Cơ khí xây dựng',
+    'Giới thiệu công ty',
+    'Hồ sơ năng lực Trần Gia Phát',
+    'tran gia phat'
+  ],
+  authors: [
+    {
+      name: 'Trần Gia Phát',
+      url: 'https://seo-company-website-1fes.vercel.app/'
+    }
+  ],
+  creator: 'Trần Gia Phát',
+  alternates: {
+    canonical: 'https://seo-company-website-1fes.vercel.app/gioi-thieu'
+  }
 }
 export default function CapabilityProfilePage() {
   return (
     <div>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT',
+            url: 'https://seo-company-website-1fes.vercel.app/',
+            logo: 'https://seo-company-website-1fes.vercel.app/logo.png',
+            description:
+              'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+            contactPoint: {
+              '@type': 'ContactPoint',
+              telephone: '+84-975-252-168',
+              email: 'trangiaphat.corp@gmail.com',
+              contactType: 'customer service',
+              areaServed: 'VN',
+              availableLanguage: ['Vietnamese', 'English']
+            },
+            sameAs: [
+              'https://www.facebook.com/info.trangiaphat.vn',
+              'https://www.youtube.com/@trangiaphatvn'
+            ],
+            additionalType: 'https://schema.org/Organization',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress:
+                'Số 25, Đường 69, Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam',
+              addressLocality: 'Thủ Đức',
+              addressRegion: 'Hồ Chí Minh',
+              postalCode: '700000',
+              addressCountry: 'VN'
+            },
+            foundingDate: '2011-05-25',
+            foundingYear: 2011,
+            foundingLocation:
+              'Số 25, Đường 69, Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam'
+          })
+        }}
+      />
       <ArticleHeader
         title='HỒ SƠ NĂNG LỰC | CATALOGUE'
         subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'

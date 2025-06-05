@@ -20,6 +20,31 @@ export const metadata: Metadata = {
         alt: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình'
       }
     ]
+  },
+  twitter: {
+    title: 'Giới thiệu | Trần Gia Phát',
+    description: 'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
+  },
+  icons: {
+    icon: 'https://seo-company-website-1fes.vercel.app/favicon.ico'
+  },
+  keywords: [
+    'Giới thiệu',
+    'Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+    'Cơ khí xây dựng',
+    'Giới thiệu công ty',
+    'Trần Gia Phát',
+    'tran gia phat'
+  ],
+  authors: [
+    {
+      name: 'Trần Gia Phát',
+      url: 'https://seo-company-website-1fes.vercel.app/'
+    }
+  ],
+  creator: 'Trần Gia Phát',
+  alternates: {
+    canonical: 'https://seo-company-website-1fes.vercel.app/gioi-thieu'
   }
 }
 export default function ArticlePage() {

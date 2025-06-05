@@ -105,10 +105,11 @@ export default function HomePage() {
                   <br />
                   SẢN PHẨM CHỐNG CHÁY
                 </h1>
-                <p className='mt-2 text-base md:text-lg'>
-                  Cung cấp giải pháp Chống cháy hàng đầu Việt Nam, bảo vệ an
-                  toàn cho mọi công trình.
-                </p>
+                <h2 className='mt-2 text-base md:text-lg'>
+                  Đầy đủ giấy phép, chứng chỉ và hồ sơ năng lực <br />
+                  Đảm bảo tiêu chuẩn chất lượng cao nhất cho sản phẩm và dịch
+                  vụ.
+                </h2>
                 <div className='mt-6'>
                   <button className='cursor-pointer mt-4 bg-primary text-white py-2 px-4 rounded-md hover:bg-secondary'>
                     <Link href='/san-pham' className='hover:underline'>
@@ -126,7 +127,8 @@ export default function HomePage() {
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/banner.jpg')`
               }}
             >
-              <div className='text-white'>
+              <div className='absolute inset-0 bg-gradient-to-r from-black to-transparent z-0' />
+              <div className='text-white relative z-10 w-full'>
                 <h1 className='text-2xl md:text-3xl font-bold leading-tight'>
                   TRẦN GIA PHÁT{' '}
                   <span className='block text-sm md:text-base'>
@@ -135,10 +137,11 @@ export default function HomePage() {
                   <br />
                   SẢN PHẨM CHỐNG CHÁY
                 </h1>
-                <p className='mt-2 text-sm md:text-base px-4'>
-                  Cung cấp giải pháp Chống cháy hàng đầu Việt Nam, <br /> bảo vệ
-                  an toàn cho mọi công trình.
-                </p>
+                <h2 className='mt-2 text-sm md:text-base px-4'>
+                  Đầy đủ giấy phép, chứng chỉ và hồ sơ năng lực <br />
+                  Đảm bảo tiêu chuẩn chất lượng cao nhất cho sản phẩm và dịch
+                  vụ.
+                </h2>
                 <button className='cursor-pointer mt-4 bg-primary text-white py-2 px-4 rounded-md hover:bg-secondary'>
                   <Link href='/san-pham' className='hover:underline'>
                     Xem sản phẩm
@@ -152,24 +155,18 @@ export default function HomePage() {
       {/* About Us Section */}
       <section className='py-16 bg-gray-50'>
         <div className='max-w-7xl mx-auto px-4 text-center'>
-          <h1 className='text-5xl md:text-6xl font-bold text-primary mb-8 tracking-wider'>
-            Trần Gia Phát
-          </h1>
-          <h2 className='text-3xl font-bold text-center mb-12'>Về chúng tôi</h2>
+          <h2 className='text-5xl md:text-5xl font-bold text-primary mb-8 tracking-wider'>
+            GIỚI THIỆU
+          </h2>
           <div className='grid md:grid-cols-2 gap-8'>
             <div>
-              <h3 className='text-xl font-semibold mb-4'>Chúng tôi là ai?</h3>
               <p className='text-gray-600'>
-                Trần Gia Phát là công ty hàng đầu trong lĩnh vực Chống cháy tại
-                Việt Nam, chuyên cung cấp các giải pháp và dịch vụ chất lượng
-                cao.
-              </p>
-            </div>
-            <div>
-              <h3 className='text-xl font-semibold mb-4'>Nhà mẫu hào hạp</h3>
-              <p className='text-gray-600'>
-                Chúng tôi cam kết mang đến những sản phẩm và dịch vụ tốt nhất,
-                đáp ứng nhu cầu của khách hàng với chất lượng và hiệu quả cao.
+                Công ty CP Cơ khí Xây dựng Trần Gia Phát luôn đặt chữ Tâm vào
+                sản xuất, không ngừng nâng cao chất lượng để mang đến sản phẩm
+                và dịch vụ tối ưu cho khách hàng. Với mục tiêu trở thành đơn vị
+                tiên phong trong lĩnh vực vật liệu chống cháy, chúng tôi đề cao
+                các giá trị cốt lõi trong kinh doanh, đặc biệt là sự trung thực
+                và tận tâm.
               </p>
             </div>
           </div>

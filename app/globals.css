@@ -22,9 +22,7 @@
     background-color: #013263;
 }
 
-.bg-primary-2 {}
-
-.bg-primary-2:hover {
+.bg-sublink:hover {
     background-color: #03488d;
 }
 
@@ -43,4 +41,42 @@ h4,
 h5,
 h6 {
     scroll-margin-top: var(--header-h);
+}
+
+@keyframes phone-ring-scale {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    10% {
+        transform: rotate(-15deg) scale(1.1);
+    }
+
+    20% {
+        transform: rotate(15deg) scale(1.3);
+    }
+
+    30% {
+        transform: rotate(-15deg) scale(1.5);
+    }
+
+    40% {
+        transform: rotate(15deg) scale(1.3);
+    }
+
+    50% {
+        transform: rotate(0deg) scale(1).1;
+    }
+
+    60% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.animate-phone-ring {
+    animation: phone-ring-scale 1s infinite;
 }

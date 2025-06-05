@@ -74,7 +74,7 @@ export default function NavigationEnhancer({
                     <li key={sub.id}>
                       <Link
                         href={sub.href}
-                        className={`block px-4 py-2 text-sm bg-primary-2 hover:text-white transition-colors ${
+                        className={`block px-4 py-2 text-sm bg-sublink hover:text-white transition-colors ${
                           pathname.startsWith(sub.href)
                             ? 'bg-primary-dark font-medium text-white'
                             : 'text-gray-800'

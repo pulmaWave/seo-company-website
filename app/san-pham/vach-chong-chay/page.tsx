@@ -1,24 +1,23 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
 import { Metadata } from 'next'
 import ArticleHeader from '@/components/breadcrumb'
 
 export const metadata: Metadata = {
-  title: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình',
+  title: 'Vách chống cháy - Giải pháp an toàn cho công trình',
   description:
-    'Tìm hiểu về cửa cuốn chống cháy và các giải pháp an toàn cho công trình.',
+    'Tìm hiểu về Vách chống cháy và các giải pháp an toàn cho công trình.',
   openGraph: {
-    title: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình',
+    title: 'Vách chống cháy - Giải pháp an toàn cho công trình',
     description:
-      'Tìm hiểu về cửa cuốn chống cháy và các giải pháp an toàn cho công trình.',
+      'Tìm hiểu về Vách chống cháy và các giải pháp an toàn cho công trình.',
     url: '/san-pham/cua-cuon-chong-chay',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/vach-chong-chay/vach-chong-chay.jpg',
         width: 1200,
         height: 630,
-        alt: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình'
+        alt: 'Vách chống cháy - Giải pháp an toàn cho công trình'
       }
     ]
   },
@@ -30,12 +29,10 @@ export const metadata: Metadata = {
     icon: 'https://seo-company-website-1fes.vercel.app/favicon.ico'
   },
   keywords: [
-    'Giới thiệu',
-    'Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
-    'Cơ khí xây dựng',
-    'Giới thiệu công ty',
-    'Trần Gia Phát',
-    'tran gia phat'
+    'vách chống cháy',
+    'vách thạch cao chống cháy',
+    'thạch cao chống cháy',
+    'Trần Gia Phát'
   ],
   authors: [
     {
@@ -45,21 +42,22 @@ export const metadata: Metadata = {
   ],
   creator: 'Trần Gia Phát',
   alternates: {
-    canonical: 'https://seo-company-website-1fes.vercel.app/gioi-thieu'
+    canonical: 'https://seo-company-website-1fes.vercel.app/vach-chong-chay'
   }
 }
 export default function ArticlePage() {
   return (
     <div>
       <ArticleHeader
-        title='CỬA KÍNH CHỐNG CHÁY - GIẢI PHÁP AN TOÀN CHO CÔNG TRÌNH'
+        title='VÁCH CHỐNG CHÁY - GIẢI PHÁP AN TOÀN CHO CÔNG TRÌNH'
         subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'
         breadcrumbItems={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Sản phẩm', href: '/san-pham' },
-          { label: 'Cửa kính chống cháy' }
+          { label: 'Vách chống cháy' }
         ]}
       />
+
       {/* Article Content */}
       <div className='max-w-7xl mx-auto px-4 py-12'>
         <div className='grid lg:grid-cols-4 gap-8'>
@@ -91,11 +89,13 @@ export default function ArticlePage() {
                 </li>
               </ul>
 
-              <h2 className='text-2xl font-bold mb-6'>
+              <h2 id='top-5-ha-noi' className='text-2xl font-bold mb-6'>
                 1. Top 5 công ty Digital Marketing ở Hà Nội
               </h2>
 
-              <h3 className='text-xl font-semibold mb-4'>1.1. SEONGON</h3>
+              <h3 id='seongon' className='text-xl font-semibold mb-4'>
+                1.1. SEONGON
+              </h3>
 
               <p className='mb-6'>
                 SEONGON là một trong những công ty Digital Marketing hàng đầu
@@ -105,7 +105,7 @@ export default function ArticlePage() {
               </p>
 
               <div className='bg-gray-50 p-6 rounded-lg mb-8'>
-                <h4 className='font-semibold mb-3'>
+                <h4 id='dich-vu-chinh-seongon' className='font-semibold mb-3'>
                   Dịch vụ chính của SEONGON:
                 </h4>
                 <ul className='list-disc pl-6 space-y-1'>
@@ -117,28 +117,31 @@ export default function ArticlePage() {
                 </ul>
               </div>
 
-              <h3 className='text-xl font-semibold mb-4'>
+              <h3
+                id='cong-ty-abc-digital'
+                className='text-xl font-semibold mb-4'
+              >
                 1.2. Công ty ABC Digital
               </h3>
               <p className='mb-6'>
                 Mô tả về công ty ABC Digital và các dịch vụ của họ...
               </p>
 
-              <h3 className='text-xl font-semibold mb-4'>
+              <h3 id='xyz-marketing' className='text-xl font-semibold mb-4'>
                 1.3. Công ty XYZ Marketing
               </h3>
               <p className='mb-6'>
                 Mô tả về công ty XYZ Marketing và các dịch vụ của họ...
               </p>
 
-              <h2 className='text-2xl font-bold mb-6'>
+              <h2 id='top-5-hcm' className='text-2xl font-bold mb-6'>
                 2. Top 5 công ty Digital Marketing ở TP.HCM
               </h2>
               <p className='mb-6'>
                 Nội dung về các công ty Digital Marketing hàng đầu tại TP.HCM...
               </p>
 
-              <h2 className='text-2xl font-bold mb-6'>
+              <h2 id='tieu-chi-danh-gia' className='text-2xl font-bold mb-6'>
                 3. Tiêu chí đánh giá công ty Digital Marketing
               </h2>
               <p className='mb-6'>
@@ -150,7 +153,7 @@ export default function ArticlePage() {
 
           {/* Table of Contents Sidebar */}
           <div className='lg:col-span-1'>
-            <div className='sticky top-8'>
+            <div className='sticky top-[var(--header-h)]'>
               <div className='bg-gray-50 rounded-lg p-6'>
                 <h3 className='font-semibold mb-4 flex items-center'>
                   📋 Nội dung chính

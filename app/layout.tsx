@@ -21,18 +21,32 @@ export default async function RootLayout({
               <div className='max-w-7xl mx-auto flex flex-wrap items-center justify-between'>
                 <div className='flex items-center gap-6'>
                   <span className='font-bold'>Liên hệ tư vấn:</span>
-                  <div className='flex items-center gap-1'>
-                    <Phone className='w-4 h-4 text-primary' />
-                    <span>0975 252 168</span>
-                  </div>
+                  <a
+                    href='tel:0975 252 168'
+                    className='flex items-center gap-2'
+                  >
+                    <Phone
+                      className='w-4 h-4 text-primary animate-phone-ring'
+                      style={{ transformOrigin: 'center' }}
+                    />
+                    <span className='text-primary font-bold animate-pulse'>
+                      0975 252 168
+                    </span>
+                  </a>
                 </div>
                 <div className='hidden sm:block'>
                   <div className='flex items-center gap-4'>
                     <span className='font-bold'>Email:</span>
-                    <div className='flex items-center gap-1'>
-                      <Mail className='w-4 h-4 text-primary' />
+                    <a
+                      href='mailto:trangiaphat.corp@gmail.com'
+                      className='flex items-center gap-2'
+                    >
+                      <Mail
+                        className='w-4 h-4 text-primary animate-phone-ring'
+                        style={{ transformOrigin: 'center' }}
+                      />
                       <span>trangiaphat.corp@gmail.com</span>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>

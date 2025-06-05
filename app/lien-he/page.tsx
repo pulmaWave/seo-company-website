@@ -2,6 +2,51 @@
 import ArticleHeader from '@/components/breadcrumb'
 import { useState } from 'react'
 
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Liên hệ',
+  description: 'Liên hệ với Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+  openGraph: {
+    title: 'Liên hệ | Trần Gia Phát',
+    description: 'Liên hệ với Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+    url: 'https://seo-company-website-1fes.vercel.app/lien-he',
+    images: [
+      {
+        url: 'https://seo-company-website-1fes.vercel.app/logo.png',
+        width: 130,
+        height: 130,
+        alt: 'Liên hệ | Trần Gia Phát'
+      }
+    ]
+  },
+  twitter: {
+    title: 'Liên hệ | Trần Gia Phát',
+    description: 'Liên hệ với Cổ phần Cơ khí Xây dựng Trần Gia Phát'
+  },
+  icons: {
+    icon: 'https://seo-company-website-1fes.vercel.app/favicon.ico'
+  },
+  keywords: [
+    'Liên hệ',
+    'Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+    'Cơ khí xây dựng',
+    'Liên hệ công ty Trần Gia Phát',
+    'Trần Gia Phát',
+    'tran gia phat'
+  ],
+  authors: [
+    {
+      name: 'Trần Gia Phát',
+      url: 'https://seo-company-website-1fes.vercel.app/'
+    }
+  ],
+  creator: 'Trần Gia Phát',
+  alternates: {
+    canonical: 'https://seo-company-website-1fes.vercel.app/gioi-thieu'
+  }
+}
+
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: '',
