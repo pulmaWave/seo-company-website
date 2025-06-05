@@ -10,8 +10,8 @@ export default function Navigation() {
       <div className='max-w-7xl mx-auto flex items-center justify-between'>
         <Link href='/' className='flex items-center'>
           <Image
-            src='/logo-bl.png'
-            alt='Trần Gia Phát logo-bl'
+            src='/logo.png'
+            alt='Trần Gia Phát logo'
             width={50}
             height={50}
             sizes='(max-width: 768px) 50px, 50px'

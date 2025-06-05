@@ -10,8 +10,8 @@ export function Footer() {
           <div>
             <div className='flex items-center mb-4'>
               <Image
-                src='/logo-bl.png'
-                alt='Trần Gia Phát logo-bl'
+                src='/logo.png'
+                alt='Trần Gia Phát logo'
                 width={50}
                 height={50}
                 sizes='(max-width: 768px) 50px, 50px'
