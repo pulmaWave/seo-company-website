@@ -9,10 +9,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Giới thiệu | Trần Gia Phát',
     description: 'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
-    url: 'https://trangiaphat.com.vn/gioi-thieu',
+    url: 'https://seo-company-website-1fes.vercel.app//gioi-thieu',
     images: [
       {
-        url: 'https://trangiaphat.com.vn/logo.png',
+        url: 'https://seo-company-website-1fes.vercel.app//logo.png',
         width: 130,
         height: 130,
         alt: 'Giới thiệu | Trần Gia Phát'
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
   },
   icons: {
-    icon: 'https://trangiaphat.com.vn/favicon.ico'
+    icon: 'https://seo-company-website-1fes.vercel.app//favicon.ico'
   },
   keywords: [
     'Giới thiệu',
@@ -34,10 +34,15 @@ export const metadata: Metadata = {
     'Trần Gia Phát',
     'tran gia phat'
   ],
-  authors: [{ name: 'Trần Gia Phát', url: 'https://trangiaphat.com.vn' }],
+  authors: [
+    {
+      name: 'Trần Gia Phát',
+      url: 'https://seo-company-website-1fes.vercel.app/'
+    }
+  ],
   creator: 'Trần Gia Phát',
   alternates: {
-    canonical: 'https://trangiaphat.com.vn/gioi-thieu'
+    canonical: 'https://seo-company-website-1fes.vercel.app//gioi-thieu'
   }
 }
 
@@ -51,8 +56,8 @@ export default function IntroducePage() {
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT',
-            url: 'https://trangiaphat.com.vn',
-            logo: 'https://trangiaphat.com.vn/images/logo.png',
+            url: 'https://seo-company-website-1fes.vercel.app/',
+            logo: 'https://seo-company-website-1fes.vercel.app//images/logo.png',
             description:
               'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
             contactPoint: {
