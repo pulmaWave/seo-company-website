@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://www.example.com', // Thay bằng domain thật
+  siteUrl: 'https://seo-company-website-1fes.vercel.app/',
   generateRobotsTxt: true,
   sitemapSize: 5000
 }
