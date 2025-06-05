@@ -1,26 +1,30 @@
 [
     {
         "name": "Cửa cuốn chống cháy",
-        "slug": "/cua-cuon-chong-chay",
+        "href": "/cua-cuon-chong-chay",
         "image": "/cua-cuon-chong-chay/cua-cuon-chong-chay.png",
-        "alt": "cua-cuon-chong-chay"
+        "alt": "cua-cuon-chong-chay",
+        "description": "Cửa cuốn chống cháy"
     },
     {
         "name": "Cửa kính chống cháy",
-        "slug": "/cua-kinh-chong-chay",
+        "href": "/cua-kinh-chong-chay",
         "image": "/cua-kinh-chong-chay/cua-kinh-chong-chay.jpg",
-        "alt": "cua-kinh-chong-chay"
+        "alt": "cua-kinh-chong-chay",
+        "description": "Cửa kính chống cháy"
     },
     {
         "name": "Cửa thép chống cháy",
-        "slug": "/cua-thep-chong-chay",
+        "href": "/cua-thep-chong-chay",
         "image": "/cua-thep-chong-chay/cua-thep-chong-chay.png",
-        "alt": "cua-thep-chong-chay"
+        "alt": "cua-thep-chong-chay",
+        "description": "Cửa thép chống cháy"
     },
     {
         "name": "Vách chống cháy",
-        "slug": "/vach-chong-chay",
+        "href": "/vach-chong-chay",
         "image": "/vach-chong-chay/vach-chong-chay.jpg",
-        "alt": "vach-chong-chay"
+        "alt": "vach-chong-chay",
+        "description": "Vách chống cháy"
     }
 ]

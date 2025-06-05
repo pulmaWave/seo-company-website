@@ -3,28 +3,84 @@ import Link from 'next/link'
 
 import { Metadata } from 'next'
 export const metadata: Metadata = {
-  title: 'Trần Gia Phát | Trang chủ',
+  title: 'Trang chủ | Trần Gia Phát',
+  description: 'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
   openGraph: {
-    title: 'Trần Gia Phát | Trang chủ',
-    description: 'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
-    url: 'https://trangiaphat.com',
+    title: 'Trang chủ | Trần Gia Phát',
+    description: 'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+    url: 'https://trangiaphat.com.vn',
     images: [
       {
-        url: 'https://trangiaphat.com/og-image.png',
-        width: 1200,
-        height: 630,
-        alt: 'Trần Gia Phát - Trang chủ'
+        url: 'https://trangiaphat.com.vn/logo.png',
+        width: 130,
+        height: 130,
+        alt: 'Trang chủ | Trần Gia Phát'
       }
-    ],
-    siteName: 'Trần Gia Phát'
+    ]
   },
-  description: 'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
+  twitter: {
+    title: 'Trang chủ | Trần Gia Phát',
+    description: 'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
+  },
+  icons: {
+    icon: 'https://trangiaphat.com.vn/favicon.ico'
+  },
+  keywords: [
+    'Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+    'Cơ khí xây dựng',
+    'Trần Gia Phát',
+    'tran gia phat'
+  ],
+  authors: [{ name: 'Trần Gia Phát', url: 'https://trangiaphat.com.vn' }],
+  creator: 'Trần Gia Phát',
+  alternates: {
+    canonical: 'https://trangiaphat.com.vn'
+  }
 }
 
 export default function HomePage() {
   return (
     <>
-      {/* Hero Section */}
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT',
+            url: 'https://trangiaphat.com.vn',
+            logo: 'https://trangiaphat.com.vn/logo.png',
+            description:
+              'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
+            contactPoint: {
+              '@type': 'ContactPoint',
+              telephone: '+84-975-252-168',
+              email: 'trangiaphat.corp@gmail.com',
+              contactType: 'customer service',
+              areaServed: 'VN',
+              availableLanguage: ['Vietnamese', 'English']
+            },
+            sameAs: [
+              'https://www.facebook.com/info.trangiaphat.vn',
+              'https://www.youtube.com/@trangiaphatvn'
+            ],
+            additionalType: 'https://schema.org/Organization',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress:
+                'Số 25, Đường 69, Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam',
+              addressLocality: 'Thủ Đức',
+              addressRegion: 'Hồ Chí Minh',
+              postalCode: '700000',
+              addressCountry: 'VN'
+            },
+            foundingDate: '2011-05-25',
+            foundingYear: 2011,
+            foundingLocation:
+              'Số 25, Đường 69, Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam'
+          })
+        }}
+      />
       <section className='bg-gradient-to-b from-gray-100 to-gray-200'>
         <div className='relative w-full'>
           <div className='hidden md:block'>
