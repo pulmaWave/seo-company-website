@@ -3,6 +3,7 @@ import Navigation from '@/components/navigation'
 import { Footer } from '@/components/footer'
 import { Phone, Mail } from 'lucide-react'
 import ScrollToTop from '@/components/scrollToTop'
+import SocialWidget from '@/components/socialWidget'
 
 export default async function RootLayout({
   children
@@ -55,6 +56,7 @@ export default async function RootLayout({
           </header>
           {children}
           <Footer />
+          <SocialWidget />
           <ScrollToTop />
         </div>
       </body>

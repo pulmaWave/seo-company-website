@@ -176,17 +176,14 @@ export default function HomePage() {
       {/* Latest Articles */}
       <section className='py-16 bg-white'>
         <div className='max-w-7xl mx-auto px-4'>
-          <h2 className='text-3xl font-bold text-center mb-12'>
-            Bài viết mới nhất
+          <h2 className='text-3xl font-bold text-center mb-12 text-primary'>
+            SẢN PHẨM NỔI BẬT
           </h2>
           <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-            <Link
-              href='/bai-viet/top-13-cong-ty-digital-marketing'
-              className='group'
-            >
+            <Link href='/san-pham/cua-cuon-chong-chay' className='group'>
               <div className='bg-gray-100 rounded-lg overflow-hidden'>
                 <Image
-                  src=''
+                  src='/cua-cuon-chong-chay/cua-cuon-chong-chay.png'
                   alt='Dự án Cửa cuốn chống cháy tại nhà ga T3 - Sân bay Tân Sơn Nhất'
                   width={300}
                   height={200}
@@ -194,8 +191,7 @@ export default function HomePage() {
                 />
                 <div className='p-6'>
                   <h3 className='text-xl font-semibold mb-2 group-hover:text-blue-600'>
-                    Dự án Cửa cuốn chống cháy tại nhà ga T3 - Sân bay Tân Sơn
-                    Nhất
+                    CỬA CUỐN CHỐNG CHÁY
                   </h3>
                   <p className='text-gray-600 text-sm'>Trần Gia Phát</p>
                 </div>
