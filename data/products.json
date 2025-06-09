@@ -4,27 +4,34 @@
         "href": "/cua-cuon-chong-chay",
         "image": "/cua-cuon-chong-chay/cua-cuon-chong-chay.webp",
         "alt": "cua-cuon-chong-chay",
-        "description": "Cửa cuốn chống cháy"
+        "description": "Cửa cuốn chống cháy là loại cửa cuốn đặc biệt, có khả năng chống cháy"
     },
     {
         "name": "Cửa kính chống cháy",
         "href": "/cua-kinh-chong-chay",
-        "image": "/cua-kinh-chong-chay/cua-kinh-chong-chay-tran-gia-phat.webp",
+        "image": "/cua-kinh-chong-chay/cua-kinh-chong-chay.webp",
         "alt": "cua-kinh-chong-chay",
-        "description": "Cửa kính chống cháy"
+        "description": "Cửa kính chống cháy được thiết kế thẩm mỹ, đẹp, chịu nhiệt, chịu lửa cao"
     },
     {
         "name": "Cửa thép chống cháy",
         "href": "/cua-thep-chong-chay",
-        "image": "/cua-thep-chong-chay/cua-thep-chong-chaywebp",
+        "image": "/cua-thep-chong-chay/cua-thep-chong-chay.webp",
         "alt": "cua-thep-chong-chay",
-        "description": "Cửa thép chống cháy"
+        "description": "Cửa thép chống cháy thiết kế hiện đại, đẹp, chịu nhiệt, chịu lửa cao"
+    },
+    {
+        "name": "Trần chống cháy",
+        "href": "/tran-chong-chay",
+        "image": "/tran-chong-chay/tran-chong-chay.webp",
+        "alt": "tran-chong-chay",
+        "description": "Trần chống cháy với thiết kế sang trọng, đẹp, tùy biến màu sắc, được thiết kế với khả năng chịu nhiệt, chịu lửa ở nhiệt độ cao"
     },
     {
         "name": "Vách chống cháy",
         "href": "/vach-chong-chay",
-        "image": "/vach-chong-chay/vach-chong-chay.jpg",
+        "image": "/vach-chong-chay/vach-chong-chay.webp",
         "alt": "vach-chong-chay",
-        "description": "Vách chống cháy"
+        "description": "Vách chống cháy được làm từ thạch cao chống cháy, đẹp, chịu nhiệt, chịu lửa cao trong nhiều giờ"
     }
 ]

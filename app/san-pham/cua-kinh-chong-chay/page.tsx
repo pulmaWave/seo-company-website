@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: '/san-pham/cua-cuon-chong-chay',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/cua-cuon-chong-chay/cua-cuon-chong-chay.webp',
         width: 1200,
         height: 630,
         alt: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình'
