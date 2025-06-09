@@ -2,21 +2,21 @@
     {
         "name": "Cửa cuốn chống cháy",
         "href": "/cua-cuon-chong-chay",
-        "image": "/cua-cuon-chong-chay/cua-cuon-chong-chay.png",
+        "image": "/cua-cuon-chong-chay/cua-cuon-chong-chay.webp",
         "alt": "cua-cuon-chong-chay",
         "description": "Cửa cuốn chống cháy"
     },
     {
         "name": "Cửa kính chống cháy",
         "href": "/cua-kinh-chong-chay",
-        "image": "/cua-kinh-chong-chay/cua-kinh-chong-chay.jpg",
+        "image": "/cua-kinh-chong-chay/cua-kinh-chong-chay-tran-gia-phat.webp",
         "alt": "cua-kinh-chong-chay",
         "description": "Cửa kính chống cháy"
     },
     {
         "name": "Cửa thép chống cháy",
         "href": "/cua-thep-chong-chay",
-        "image": "/cua-thep-chong-chay/cua-thep-chong-chay.png",
+        "image": "/cua-thep-chong-chay/cua-thep-chong-chaywebp",
         "alt": "cua-thep-chong-chay",
         "description": "Cửa thép chống cháy"
     },

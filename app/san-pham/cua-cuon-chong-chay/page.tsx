@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: '/san-pham/cua-cuon-chong-chay',
     images: [
       {
-        url: '/cua-cuon-chong-chay/cua-cuon-chong-chay.png',
+        url: '/cua-cuon-chong-chay/cua-cuon-chong-chay.webp',
         width: 1200,
         height: 630,
         alt: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình'
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     ]
   },
   icons: {
-    icon: 'https://seo-company-website-1fes.vercel.app/favicon.ico'
+    icon: 'https://www.trangiaphat.com.vn/favicon.ico'
   },
   keywords: [
     'cửa cuốn chống cháy',
@@ -35,13 +35,12 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Trần Gia Phát',
-      url: 'https://seo-company-website-1fes.vercel.app/'
+      url: 'https://www.trangiaphat.com.vn/'
     }
   ],
   creator: 'Trần Gia Phát',
   alternates: {
-    canonical:
-      'https://seo-company-website-1fes.vercel.app/san-pham/cua-cuon-chong-chay'
+    canonical: 'https://www.trangiaphat.com.vn/san-pham/cua-cuon-chong-chay'
   }
 }
 export default function ArticlePage() {
@@ -54,8 +53,8 @@ export default function ArticlePage() {
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'cửa cuốn chống cháy',
-            url: 'https://seo-company-website-1fes.vercel.app/san-pham/cua-cuon-chong-chay',
-            logo: 'https://seo-company-website-1fes.vercel.app/logo.png',
+            url: 'https://www.trangiaphat.com.vn/san-pham/cua-cuon-chong-chay',
+            logo: 'https://www.trangiaphat.com.vn/logo.png',
             description: '',
             contactPoint: {
               '@type': 'ContactPoint',
@@ -271,7 +270,7 @@ export default function ArticlePage() {
 
               {/* Related Articles */}
               <div className='bg-white border rounded-lg p-6 mt-6'>
-                <h3 className='font-semibold mb-4'>Bài viết liên quan</h3>
+                <h3 className='font-semibold mb-4'>Sản phẩm liên quan</h3>
                 <div className='space-y-4'>
                   <Link href='#' className='block group'>
                     <div className='flex gap-3'>

@@ -9,10 +9,10 @@ export const metadata: Metadata = {
     title: 'Hồ sơ năng lực | Trần Gia Phát',
     description:
       'Hồ sơ năng lực của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
-    url: 'https://seo-company-website-1fes.vercel.app/ho-so-nang-luc',
+    url: 'https://www.trangiaphat.com.vn/ho-so-nang-luc',
     images: [
       {
-        url: 'https://seo-company-website-1fes.vercel.app/logo.png',
+        url: 'https://www.trangiaphat.com.vn/logo.png',
         width: 130,
         height: 130,
         alt: 'Hồ sơ năng lực | Trần Gia Phát'
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
       'Hồ sơ năng lực của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
   },
   icons: {
-    icon: 'https://seo-company-website-1fes.vercel.app/favicon.ico'
+    icon: 'https://www.trangiaphat.com.vn/favicon.ico'
   },
   keywords: [
     'Hồ sơ năng lực',
@@ -38,12 +38,12 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Trần Gia Phát',
-      url: 'https://seo-company-website-1fes.vercel.app/'
+      url: 'https://www.trangiaphat.com.vn/'
     }
   ],
   creator: 'Trần Gia Phát',
   alternates: {
-    canonical: 'https://seo-company-website-1fes.vercel.app/gioi-thieu'
+    canonical: 'https://www.trangiaphat.com.vn/gioi-thieu'
   }
 }
 export default function CapabilityProfilePage() {
@@ -56,8 +56,8 @@ export default function CapabilityProfilePage() {
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT',
-            url: 'https://seo-company-website-1fes.vercel.app/',
-            logo: 'https://seo-company-website-1fes.vercel.app/logo.png',
+            url: 'https://www.trangiaphat.com.vn/',
+            logo: 'https://www.trangiaphat.com.vn/logo.png',
             description:
               'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
             contactPoint: {

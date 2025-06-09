@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://seo-company-website-1fes.vercel.app/',
+  siteUrl: 'https://www.trangiaphat.com.vn/',
   generateRobotsTxt: true,
   sitemapSize: 5000
 }

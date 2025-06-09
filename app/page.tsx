@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Trang chủ | Trần Gia Phát',
     description: 'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
-    url: 'https://seo-company-website-1fes.vercel.app/',
+    url: 'https://www.trangiaphat.com.vn/',
     images: [
       {
-        url: 'https://seo-company-website-1fes.vercel.app//logo.png',
+        url: 'https://www.trangiaphat.com.vn/logo.png',
         width: 130,
         height: 130,
         alt: 'Trang chủ | Trần Gia Phát'
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
   },
   icons: {
-    icon: 'https://seo-company-website-1fes.vercel.app//favicon.ico'
+    icon: 'https://www.trangiaphat.com.vn/favicon.ico'
   },
   keywords: [
     'Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
@@ -34,12 +34,12 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Trần Gia Phát',
-      url: 'https://seo-company-website-1fes.vercel.app/'
+      url: 'https://www.trangiaphat.com.vn/'
     }
   ],
   creator: 'Trần Gia Phát',
   alternates: {
-    canonical: 'https://seo-company-website-1fes.vercel.app/'
+    canonical: 'https://www.trangiaphat.com.vn/'
   }
 }
 
@@ -53,8 +53,8 @@ export default function HomePage() {
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT',
-            url: 'https://seo-company-website-1fes.vercel.app/',
-            logo: 'https://seo-company-website-1fes.vercel.app//logo.png',
+            url: 'https://www.trangiaphat.com.vn/',
+            logo: 'https://seo-company-website-1fes.vercel.ap/logo.png',
             description:
               'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
             contactPoint: {
@@ -155,9 +155,9 @@ export default function HomePage() {
         </div>
       </section>
       {/* About Us Section */}
-      <section className='py-16 bg-gray-100'>
+      <section className='py-8 md:py-16 bg-white'>
         <div className='max-w-7xl mx-auto px-4 text-center'>
-          <h2 className='text-4xl font-bold text-primary mb-8 tracking-wider'>
+          <h2 className='text-4xl font-bold text-primary mb-2 md:mb-4 tracking-wider'>
             GIỚI THIỆU
           </h2>
           <div className=''>
@@ -175,7 +175,7 @@ export default function HomePage() {
                 Xem thêm
               </Link>
             </div>
-            <div className='max-w-[1000px] mx-auto py-8 px-2 text-center'>
+            <div className='max-w-[1000px] mx-auto text-center bg-gray-100 rounded-lg shadow-md p-2 mt-4 md:mt-8 hover:shadow-lg transition-shadow duration-300'>
               <Image
                 src='/gioi-thieu/thuong-hieu-tran-gia-phat.webp'
                 alt='Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
@@ -190,7 +190,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* Latest Articles */}
-      <section className='py-16 bg-white'>
+      <section className='py-8 md:py-16 bg-white'>
         <div className='max-w-7xl mx-auto px-4'>
           <h2 className='text-3xl font-bold text-center mb-12 text-primary'>
             SẢN PHẨM NỔI BẬT
@@ -199,7 +199,7 @@ export default function HomePage() {
             <Link href='/san-pham/cua-cuon-chong-chay' className='group'>
               <div className='bg-gray-100 rounded-lg overflow-hidden'>
                 <Image
-                  src='/cua-cuon-chong-chay/cua-cuon-chong-chay.png'
+                  src='/cua-cuon-chong-chay/cua-cuon-chong-chay.webp'
                   alt='Dự án Cửa cuốn chống cháy tại nhà ga T3 - Sân bay Tân Sơn Nhất'
                   width={300}
                   height={200}

@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Giới thiệu | Trần Gia Phát',
     description: 'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
-    url: 'https://seo-company-website-1fes.vercel.app/gioi-thieu',
+    url: 'https://www.trangiaphat.com.vn/gioi-thieu',
     images: [
       {
-        url: 'https://seo-company-website-1fes.vercel.app/gioi-thieu/thuong-hieu-tran-gia-phat.webp',
+        url: 'https://www.trangiaphat.com.vn/gioi-thieu/thuong-hieu-tran-gia-phat.webp',
         width: 12080,
         height: 848,
         alt: 'Giới thiệu | Trần Gia Phát'
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     description: 'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
   },
   icons: {
-    icon: 'https://seo-company-website-1fes.vercel.app/favicon.ico'
+    icon: 'https://www.trangiaphat.com.vn/favicon.ico'
   },
   keywords: [
     'Giới thiệu',
@@ -36,12 +36,12 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Trần Gia Phát',
-      url: 'https://seo-company-website-1fes.vercel.app/'
+      url: 'https://www.trangiaphat.com.vn/'
     }
   ],
   creator: 'Trần Gia Phát',
   alternates: {
-    canonical: 'https://seo-company-website-1fes.vercel.app/gioi-thieu'
+    canonical: 'https://www.trangiaphat.com.vn/gioi-thieu'
   }
 }
 
@@ -55,8 +55,8 @@ export default function IntroducePage() {
             '@context': 'https://schema.org',
             '@type': 'Organization',
             name: 'CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT',
-            url: 'https://seo-company-website-1fes.vercel.app/',
-            logo: 'https://seo-company-website-1fes.vercel.app/logo.png',
+            url: 'https://www.trangiaphat.com.vn/',
+            logo: 'https://www.trangiaphat.com.vn/logo.png',
             description:
               'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
             contactPoint: {
@@ -131,7 +131,7 @@ export default function IntroducePage() {
           khí xây dựng Trần Gia Phát – mở ra một chặng đường mới chuyên nghiệp
           và quy mô hơn.
         </p>
-        <div className='max-w-[1000px] mx-auto py-8 px-2 text-center'>
+        <div className='max-w-[1000px] mx-auto text-center bg-gray-100 rounded-lg shadow-md p-2 my-4 md:my-8 hover:shadow-lg transition-shadow duration-300'>
           <Image
             src='/gioi-thieu/thuong-hieu-tran-gia-phat.webp'
             alt='Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'

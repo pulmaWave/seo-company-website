@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     description: 'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
   },
   icons: {
-    icon: 'https://seo-company-website-1fes.vercel.app/favicon.ico'
+    icon: 'https://www.trangiaphat.com.vn/favicon.ico'
   },
   keywords: [
     'vách chống cháy',
@@ -38,12 +38,12 @@ export const metadata: Metadata = {
   authors: [
     {
       name: 'Trần Gia Phát',
-      url: 'https://seo-company-website-1fes.vercel.app/'
+      url: 'https://www.trangiaphat.com.vn/'
     }
   ],
   creator: 'Trần Gia Phát',
   alternates: {
-    canonical: 'https://seo-company-website-1fes.vercel.app/vach-chong-chay'
+    canonical: 'https://www.trangiaphat.com.vn/vach-chong-chay'
   }
 }
 export default function ArticlePage() {

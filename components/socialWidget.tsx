@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const items = [
   {
-    href: 'https://zalo.me/0334581525',
+    href: 'https://zalo.me/0975252168',
     label: 'Zalo',
     icon: '/zalo.svg',
     bg: 'bg-[#0084FF]'
