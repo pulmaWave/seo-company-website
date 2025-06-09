@@ -175,14 +175,14 @@ export default function HomePage() {
                 Xem thêm
               </Link>
             </div>
-            <div className='max-w-[1000px] mx-auto py-8 px-2'>
+            <div className='max-w-[1000px] mx-auto py-8 px-2 text-center'>
               <Image
                 src='/gioi-thieu/thuong-hieu-tran-gia-phat.webp'
                 alt='Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
-                width={1200}
-                height={848}
+                width={1000}
+                height={707}
               />
-              <p className='text-center text-sm mt-2 italic'>
+              <p className='text-sm mt-2 italic'>
                 Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát
               </p>
             </div>

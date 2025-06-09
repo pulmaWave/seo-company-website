@@ -111,7 +111,6 @@ export default function IntroducePage() {
           itemProp='description'
           content='Giới thiệu về công ty, lịch sử phát triển, lĩnh vực hoạt động và cam kết của Trần Gia Phát.'
         />
-
         <h2 className='text-2xl font-bold mb-4' itemProp='headline'>
           LỊCH SỬ PHÁT TRIỂN
         </h2>
@@ -123,7 +122,6 @@ export default function IntroducePage() {
           như: Cơ khí chế tạo, gia công kéo thép, nhà thép tiền chế, gia công
           nhôm kính và đầu tư qua lĩnh vực y tế.
         </p>
-
         <h2 className='text-2xl font-bold mb-4'>ĐỘT PHÁ</h2>
         <p>
           Qua ngần ấy năm tìm tòi và nghiên cứu, TRẦN GIA PHÁT từng bước chuyển
@@ -133,18 +131,17 @@ export default function IntroducePage() {
           khí xây dựng Trần Gia Phát – mở ra một chặng đường mới chuyên nghiệp
           và quy mô hơn.
         </p>
-        <div className='py-8 px-2'>
+        <div className='max-w-[1000px] mx-auto py-8 px-2 text-center'>
           <Image
             src='/gioi-thieu/thuong-hieu-tran-gia-phat.webp'
             alt='Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
-            width={1200}
-            height={848}
+            width={1000}
+            height={707}
           />
-          <p className='text-center text-sm mt-2 italic'>
+          <p className='text-sm mt-2 italic'>
             Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát
           </p>
         </div>
-
         <h2 className='text-2xl font-bold mb-4'>LĨNH VỰC HOẠT ĐỘNG</h2>
         <p className='mb-6'>
           Chúng tôi tự hào là đơn vị tiên phong trong sản xuất và gia công sản
