@@ -106,21 +106,21 @@ export default function ArticlePage() {
                 id='tran-chong-chay-la-gi'
                 className='text-2xl font-bold mb-6'
               >
-                1. Trần chống cháy là gì?
+                1. Cửa cuốn chống cháy là gì?
               </h2>
               <p className='mb-6'>
-                Trần chống cháy là hệ thống trần được thiết kế đặc biệt để ngăn
-                cản sự lan truyền của lửa trong một khoảng thời gian nhất định
-                (thường là 60 phút, 90 phút, hoặc 120 phút). Trần có thể làm từ
-                các vật liệu như thạch cao chống cháy, tấm xi măng, tấm panel
-                chống cháy có lớp lõi cách nhiệt,…
+                Cửa cuốn chống cháy là hệ thống trần được thiết kế đặc biệt để
+                ngăn cản sự lan truyền của lửa trong một khoảng thời gian nhất
+                định (thường là 60 phút, 90 phút, hoặc 120 phút). Trần có thể
+                làm từ các vật liệu như thạch cao chống cháy, tấm xi măng, tấm
+                panel chống cháy có lớp lõi cách nhiệt,…
               </p>
 
               <h2
                 id='vai-tro-tran-chong-chay'
                 className='text-2xl font-bold mb-6'
               >
-                2. Vai trò của trần chống cháy
+                2. Vai trò của cửa cuốn chống cháy
               </h2>
               <ul className='list-disc pl-6 mb-6 space-y-2'>
                 <li>
@@ -146,11 +146,11 @@ export default function ArticlePage() {
                 id='cac-loai-tran-chong-chay'
                 className='text-2xl font-bold mb-6'
               >
-                3. Các loại trần chống cháy tại Trần Gia Phát
+                3. Các loại cửa cuốn chống cháy tại Trần Gia Phát
               </h2>
               <p className='mb-4'>
-                Chúng tôi cung cấp đa dạng sản phẩm trần chống cháy theo từng
-                nhu cầu cụ thể:
+                Chúng tôi cung cấp đa dạng sản phẩm cửa cuốn chống cháy theo
+                từng nhu cầu cụ thể:
               </p>
               <div className='overflow-x-auto mb-6'>
                 <table className='min-w-full border border-gray-300'>
@@ -216,11 +216,11 @@ export default function ArticlePage() {
                 id='lien-he-bao-gia-tran-chong-chay'
                 className='text-2xl font-bold mb-6'
               >
-                5. Liên hệ báo giá trần chống cháy
+                5. Liên hệ báo giá cửa cuốn chống cháy
               </h2>
               <p>
-                Bạn đang tìm kiếm giải pháp trần chống cháy đạt chuẩn cho công
-                trình của mình? Đừng ngần ngại liên hệ{' '}
+                Bạn đang tìm kiếm giải pháp cửa cuốn chống cháy đạt chuẩn cho
+                công trình của mình? Đừng ngần ngại liên hệ{' '}
                 <strong>Trần Gia Phát</strong> để được tư vấn và báo giá nhanh
                 chóng!
               </p>
@@ -240,19 +240,19 @@ export default function ArticlePage() {
                     href='#tran-chong-chay-la-gi'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    1. Trần chống cháy là gì?
+                    1. Cửa cuốn chống cháy là gì?
                   </Link>
                   <Link
                     href='#vai-tro-cua-tran-chong-chay'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    2. Vai trò của trần chống cháy
+                    2. Vai trò của cửa cuốn chống cháy
                   </Link>
                   <Link
                     href='#cac-loai-tran-chong-chay'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    3. Các loại trần chống cháy
+                    3. Các loại cửa cuốn chống cháy
                   </Link>
                   <Link
                     href='#tai-sao-chon-tran-gia-phat'
@@ -264,7 +264,7 @@ export default function ArticlePage() {
                     href='#lien-he-bao-gia-tran-chong-chay'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    5. Liên hệ báo giá trần chống cháy
+                    5. Liên hệ báo giá cửa cuốn chống cháy
                   </Link>
                 </nav>
               </div>

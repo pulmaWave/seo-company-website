@@ -2,6 +2,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Metadata } from 'next'
 import ArticleHeader from '@/components/breadcrumb'
+import ContactInfoBox from '@/components/contactBox'
 
 export const metadata: Metadata = {
   title: 'Vách chống cháy - Giải pháp an toàn cho công trình',
@@ -64,144 +65,169 @@ export default function ArticlePage() {
           {/* Main Content */}
           <div className='lg:col-span-3'>
             <article className='prose prose-lg max-w-none'>
-              <p className='text-lg leading-relaxed mb-6'></p>
+              <h2
+                id='tran-chong-chay-la-gi'
+                className='text-2xl font-bold mb-6'
+              >
+                1. Trần chống cháy là gì?
+              </h2>
+              <p className='mb-6'>
+                Trần chống cháy là hệ thống trần được thiết kế đặc biệt để ngăn
+                cản sự lan truyền của lửa trong một khoảng thời gian nhất định
+                (thường là 60 phút, 90 phút, hoặc 120 phút). Trần có thể làm từ
+                các vật liệu như thạch cao chống cháy, tấm xi măng, tấm panel
+                chống cháy có lớp lõi cách nhiệt,…
+              </p>
 
-              <p className='mb-6'>Tham khảo bài viết liên quan:</p>
-
-              <ul className='list-disc pl-6 mb-8 space-y-2'>
+              <h2
+                id='vai-tro-tran-chong-chay'
+                className='text-2xl font-bold mb-6'
+              >
+                2. Vai trò của trần chống cháy
+              </h2>
+              <ul className='list-disc pl-6 mb-6 space-y-2'>
                 <li>
-                  <Link href='#' className='text-red-600 hover:underline'>
-                    Thành công trong lĩnh vực du lịch APAC với 3 insight định
-                    hình chiến lược Marketing
-                  </Link>
+                  <strong>Ngăn ngừa lửa lan rộng:</strong> giúp cô lập đám cháy
+                  trong khu vực nhỏ hơn.
                 </li>
                 <li>
-                  <Link href='#' className='text-red-600 hover:underline'>
-                    5 chiêu thức Marketing mùa lễ hội khiến video quảng cáo trở
-                    nên nổi bật
-                  </Link>
+                  <strong>Tăng thời gian sơ tán:</strong> giúp người trong công
+                  trình có thêm thời gian để thoát hiểm.
                 </li>
                 <li>
-                  <Link href='#' className='text-red-600 hover:underline'>
-                    Google | Tối ưu lợi nhuận và giành chiến thắng trong mùa mua
-                    sắm lớn trong năm
-                  </Link>
+                  <strong>Bảo vệ kết cấu công trình:</strong> hạn chế thiệt hại
+                  đến hệ thống điện, ống dẫn và thiết bị phía trên trần.
+                </li>
+                <li>
+                  <strong>Tuân thủ quy chuẩn PCCC:</strong> nhiều công trình yêu
+                  cầu bắt buộc có hệ thống trần, vách chống cháy theo quy định
+                  pháp luật.
                 </li>
               </ul>
 
-              <h2 id='top-5-ha-noi' className='text-2xl font-bold mb-6'>
-                1. Top 5 công ty Digital Marketing ở Hà Nội
+              <h2
+                id='cac-loai-tran-chong-chay'
+                className='text-2xl font-bold mb-6'
+              >
+                3. Các loại trần chống cháy tại Trần Gia Phát
               </h2>
-
-              <h3 id='seongon' className='text-xl font-semibold mb-4'>
-                1.1. SEONGON
-              </h3>
-
+              <p className='mb-4'>
+                Chúng tôi cung cấp đa dạng sản phẩm trần chống cháy theo từng
+                nhu cầu cụ thể:
+              </p>
+              <div className='overflow-x-auto mb-6'>
+                <table className='min-w-full border border-gray-300'>
+                  <thead>
+                    <tr>
+                      <th className='border px-4 py-2'>Loại trần</th>
+                      <th className='border px-4 py-2'>Thời gian chịu lửa</th>
+                      <th className='border px-4 py-2'>Ứng dụng phổ biến</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td className='border px-4 py-2'>Thạch cao chống cháy</td>
+                      <td className='border px-4 py-2'>EI60 – EI90</td>
+                      <td className='border px-4 py-2'>
+                        Nhà ở, văn phòng, chung cư
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className='border px-4 py-2'>Tấm panel chống cháy</td>
+                      <td className='border px-4 py-2'>EI90 – EI120</td>
+                      <td className='border px-4 py-2'>
+                        Nhà xưởng, kho bãi, trung tâm dữ liệu
+                      </td>
+                    </tr>
+                    <tr>
+                      <td className='border px-4 py-2'>Trần thép chịu nhiệt</td>
+                      <td className='border px-4 py-2'>EI120 trở lên</td>
+                      <td className='border px-4 py-2'>
+                        Hầm đỗ xe, trung tâm thương mại lớn
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <p className='mb-6'>
-                SEONGON là một trong những công ty Digital Marketing hàng đầu
-                tại Việt Nam với hơn 13 năm kinh nghiệm trong lĩnh vực. Công ty
-                chuyên cung cấp các dịch vụ SEO, Google Ads, Social Media
-                Marketing và Content Marketing cho hơn 5000 doanh nghiệp.
+                Tất cả sản phẩm đều đi kèm chứng nhận kiểm định PCCC và thi công
+                bởi đội ngũ kỹ thuật lành nghề.
               </p>
 
-              <div className='bg-gray-50 p-6 rounded-lg mb-8'>
-                <h4 id='dich-vu-chinh-seongon' className='font-semibold mb-3'>
-                  Dịch vụ chính của SEONGON:
-                </h4>
-                <ul className='list-disc pl-6 space-y-1'>
-                  <li>Tối ưu hóa công cụ tìm kiếm (SEO)</li>
-                  <li>Quảng cáo Google Ads</li>
-                  <li>Marketing trên mạng xã hội</li>
-                  <li>Thiết kế và phát triển website</li>
-                  <li>Content Marketing</li>
+              <h2
+                id='tai-sao-chon-tran-chong-chay'
+                className='text-2xl font-bold mb-6'
+              >
+                4. Tại sao chọn Trần Gia Phát?
+              </h2>
+              <div className='bg-gray-100 shadow rounded p-4 mb-6'>
+                <ul className='list-disc pl-6 mb-2 space-y-2'>
+                  <li>
+                    Kinh nghiệm hơn 10 năm trong lĩnh vực cơ khí – xây dựng và
+                    PCCC.
+                  </li>
+                  <li>
+                    Cam kết chất lượng: sản phẩm đạt tiêu chuẩn EI60 – EI120.
+                  </li>
+                  <li>Chứng nhận kiểm định theo PCCC</li>
+                  <li>Tư vấn và thiết kế miễn phí theo yêu cầu công trình.</li>
+                  <li>Thi công nhanh, đúng tiến độ với giá cả cạnh tranh.</li>
                 </ul>
               </div>
 
-              <h3
-                id='cong-ty-abc-digital'
-                className='text-xl font-semibold mb-4'
+              <h2
+                id='lien-he-bao-gia-tran-chong-chay'
+                className='text-2xl font-bold mb-6'
               >
-                1.2. Công ty ABC Digital
-              </h3>
-              <p className='mb-6'>
-                Mô tả về công ty ABC Digital và các dịch vụ của họ...
-              </p>
-
-              <h3 id='xyz-marketing' className='text-xl font-semibold mb-4'>
-                1.3. Công ty XYZ Marketing
-              </h3>
-              <p className='mb-6'>
-                Mô tả về công ty XYZ Marketing và các dịch vụ của họ...
-              </p>
-
-              <h2 id='top-5-hcm' className='text-2xl font-bold mb-6'>
-                2. Top 5 công ty Digital Marketing ở TP.HCM
+                5. Liên hệ báo giá trần chống cháy
               </h2>
-              <p className='mb-6'>
-                Nội dung về các công ty Digital Marketing hàng đầu tại TP.HCM...
-              </p>
-
-              <h2 id='tieu-chi-danh-gia' className='text-2xl font-bold mb-6'>
-                3. Tiêu chí đánh giá công ty Digital Marketing
-              </h2>
-              <p className='mb-6'>
-                Khi lựa chọn công ty Digital Marketing, bạn cần xem xét các tiêu
-                chí sau...
+              <p>
+                Bạn đang tìm kiếm giải pháp trần chống cháy đạt chuẩn cho công
+                trình của mình? Đừng ngần ngại liên hệ{' '}
+                <strong>Trần Gia Phát</strong> để được tư vấn và báo giá nhanh
+                chóng!
               </p>
             </article>
+            <ContactInfoBox />
           </div>
 
           {/* Table of Contents Sidebar */}
           <div className='lg:col-span-1'>
             <div className='sticky top-[var(--header-h)]'>
-              <div className='bg-gray-50 rounded-lg p-6'>
+              <div className='bg-gray-100 rounded-lg p-6'>
                 <h3 className='font-semibold mb-4 flex items-center'>
                   📋 Nội dung chính
                 </h3>
                 <nav className='space-y-2'>
                   <Link
-                    href='#top-5-ha-noi'
+                    href='#tran-chong-chay-la-gi'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    1. Top 5 công ty Digital Marketing ở Hà Nội
-                  </Link>
-                  <div className='pl-4 space-y-1'>
-                    <Link
-                      href='#seongon'
-                      className='block text-sm text-gray-600 hover:text-blue-600 py-1'
-                    >
-                      1.1. SEONGON
-                    </Link>
-                    <Link
-                      href='#abc-digital'
-                      className='block text-sm text-gray-600 hover:text-blue-600 py-1'
-                    >
-                      1.2. Công ty ABC Digital
-                    </Link>
-                    <Link
-                      href='#xyz-marketing'
-                      className='block text-sm text-gray-600 hover:text-blue-600 py-1'
-                    >
-                      1.3. Công ty XYZ Marketing
-                    </Link>
-                  </div>
-                  <Link
-                    href='#top-5-hcm'
-                    className='block text-sm text-gray-700 hover:text-blue-600 py-1'
-                  >
-                    2. Top 5 công ty Digital Marketing ở TP.HCM
+                    1. Trần chống cháy là gì?
                   </Link>
                   <Link
-                    href='#tieu-chi-danh-gia'
+                    href='#vai-tro-cua-tran-chong-chay'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    3. Tiêu chí đánh giá công ty Digital Marketing
+                    2. Vai trò của trần chống cháy
                   </Link>
                   <Link
-                    href='#ket-luan'
+                    href='#cac-loai-tran-chong-chay'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    4. Kết luận
+                    3. Các loại trần chống cháy
+                  </Link>
+                  <Link
+                    href='#tai-sao-chon-tran-gia-phat'
+                    className='block text-sm text-gray-700 hover:text-blue-600 py-1'
+                  >
+                    4. Tại sao chọn Trần Gia Phát?
+                  </Link>
+                  <Link
+                    href='#lien-he-bao-gia-tran-chong-chay'
+                    className='block text-sm text-gray-700 hover:text-blue-600 py-1'
+                  >
+                    5. Liên hệ báo giá trần chống cháy
                   </Link>
                 </nav>
               </div>

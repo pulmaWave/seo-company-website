@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
-import Link from 'next/link'
 import ArticleHeader from '@/components/breadcrumb'
+import Image from 'next/image'
 
 export const metadata: Metadata = {
   title: 'Giới thiệu',
@@ -11,9 +11,9 @@ export const metadata: Metadata = {
     url: 'https://seo-company-website-1fes.vercel.app/gioi-thieu',
     images: [
       {
-        url: 'https://seo-company-website-1fes.vercel.app/logo.png',
-        width: 130,
-        height: 130,
+        url: 'https://seo-company-website-1fes.vercel.app/gioi-thieu/thuong-hieu-tran-gia-phat.webp',
+        width: 12080,
+        height: 848,
         alt: 'Giới thiệu | Trần Gia Phát'
       }
     ]
@@ -98,11 +98,76 @@ export default function IntroducePage() {
       />
 
       {/* Article Content */}
-      <div className='max-w-7xl mx-auto px-4 py-12'>
-        <Link href='/lien-he' className='text-blue-600 hover:underline'>
-          Liên hệ với chúng tôi
-        </Link>
-      </div>
+      <section
+        className='max-w-7xl mx-auto px-4 py-12'
+        itemScope
+        itemType='https://schema.org/AboutPage'
+      >
+        <meta
+          itemProp='name'
+          content='Giới thiệu công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
+        />
+        <meta
+          itemProp='description'
+          content='Giới thiệu về công ty, lịch sử phát triển, lĩnh vực hoạt động và cam kết của Trần Gia Phát.'
+        />
+
+        <h2 className='text-2xl font-bold mb-4' itemProp='headline'>
+          LỊCH SỬ PHÁT TRIỂN
+        </h2>
+        <p className='mb-6' itemProp='about'>
+          TRẦN GIA PHÁT – Từ một công ty TNHH hoạt động trong lĩnh vực Điện –
+          Điện tử với sản phẩm chính là bộ lưu điện cửa cuốn và motor cửa cuốn.
+          Với sự quyết liệt không ngừng nỗ lực phát triển, Trần Gia Phát đã tham
+          gia và đầu tư phát triển thêm nhiều lĩnh vực sản xuất và kinh doanh
+          như: Cơ khí chế tạo, gia công kéo thép, nhà thép tiền chế, gia công
+          nhôm kính và đầu tư qua lĩnh vực y tế.
+        </p>
+
+        <h2 className='text-2xl font-bold mb-4'>ĐỘT PHÁ</h2>
+        <p>
+          Qua ngần ấy năm tìm tòi và nghiên cứu, TRẦN GIA PHÁT từng bước chuyển
+          mình vươn lên thành một thương hiệu uy tín trong ngành cơ khí và phòng
+          cháy chữa cháy. Sau hơn 13 năm phát triển không ngừng nghỉ, ngày
+          12/04/2022 công ty đã chính thức chuyển đổi thành Công ty Cổ phần Cơ
+          khí xây dựng Trần Gia Phát – mở ra một chặng đường mới chuyên nghiệp
+          và quy mô hơn.
+        </p>
+        <div className='py-8 px-2'>
+          <Image
+            src='/gioi-thieu/thuong-hieu-tran-gia-phat.webp'
+            alt='Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
+            width={1200}
+            height={848}
+          />
+          <p className='text-center text-sm mt-2 italic'>
+            Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát
+          </p>
+        </div>
+
+        <h2 className='text-2xl font-bold mb-4'>LĨNH VỰC HOẠT ĐỘNG</h2>
+        <p className='mb-6'>
+          Chúng tôi tự hào là đơn vị tiên phong trong sản xuất và gia công sản
+          phẩm liên quan đến phòng cháy chữa cháy (PCCC) như cửa cuốn chống
+          cháy, kính chống cháy, trần chống cháy, màn ngăn cháy, màn ngăn khói
+          và nhiều sản phẩm cơ khí khác phục vụ cho các công trình lớn nhỏ trên
+          toàn quốc.
+        </p>
+
+        <h2 className='text-2xl font-bold mb-4'>CAM KẾT CỦA CHÚNG TÔI</h2>
+        <p className='mb-6'>
+          TRẦN GIA PHÁT luôn đặt <strong>UY TÍN - TRÁCH NHIỆM - AN TOÀN</strong>{' '}
+          lên hàng đầu trong từng sản phẩm và công trình. Mỗi bộ cửa chống cháy,
+          mỗi vách ngăn khói hay thiết bị PCCC đều là minh chứng cho cam kết
+          vững chắc vì sự an toàn cộng đồng.
+        </p>
+
+        <h2 className='text-2xl font-bold mb-4'>GIÁ TRỊ CỐT LÕI</h2>
+        <strong>
+          TRẦN GIA PHÁT – SẢN XUẤT DỰA TRÊN CHỮ TÂM – KINH DOANH DỰA TRÊN CHỮ
+          TÍN.
+        </strong>
+      </section>
     </div>
   )
 }

@@ -67,9 +67,7 @@ export default function ArticlePage() {
           <div className='lg:col-span-3'>
             <article className='prose prose-lg max-w-none'>
               <p className='text-lg leading-relaxed mb-6'></p>
-
               <p className='mb-6'>Tham khảo bài viết liên quan:</p>
-
               <ul className='list-disc pl-6 mb-8 space-y-2'>
                 <li>
                   <Link href='#' className='text-red-600 hover:underline'>
@@ -90,20 +88,16 @@ export default function ArticlePage() {
                   </Link>
                 </li>
               </ul>
-
               <h2 className='text-2xl font-bold mb-6'>
                 1. Top 5 công ty Digital Marketing ở Hà Nội
               </h2>
-
               <h3 className='text-xl font-semibold mb-4'>1.1. SEONGON</h3>
-
               <p className='mb-6'>
                 SEONGON là một trong những công ty Digital Marketing hàng đầu
                 tại Việt Nam với hơn 13 năm kinh nghiệm trong lĩnh vực. Công ty
                 chuyên cung cấp các dịch vụ SEO, Google Ads, Social Media
                 Marketing và Content Marketing cho hơn 5000 doanh nghiệp.
               </p>
-
               <div className='bg-gray-50 p-6 rounded-lg mb-8'>
                 <h4 className='font-semibold mb-3'>
                   Dịch vụ chính của SEONGON:
@@ -116,28 +110,24 @@ export default function ArticlePage() {
                   <li>Content Marketing</li>
                 </ul>
               </div>
-
               <h3 className='text-xl font-semibold mb-4'>
                 1.2. Công ty ABC Digital
               </h3>
               <p className='mb-6'>
                 Mô tả về công ty ABC Digital và các dịch vụ của họ...
               </p>
-
               <h3 className='text-xl font-semibold mb-4'>
                 1.3. Công ty XYZ Marketing
               </h3>
               <p className='mb-6'>
                 Mô tả về công ty XYZ Marketing và các dịch vụ của họ...
               </p>
-
               <h2 className='text-2xl font-bold mb-6'>
                 2. Top 5 công ty Digital Marketing ở TP.HCM
               </h2>
               <p className='mb-6'>
                 Nội dung về các công ty Digital Marketing hàng đầu tại TP.HCM...
               </p>
-
               <h2 className='text-2xl font-bold mb-6'>
                 3. Tiêu chí đánh giá công ty Digital Marketing
               </h2>
@@ -147,7 +137,6 @@ export default function ArticlePage() {
               </p>
             </article>
           </div>
-
           {/* Table of Contents Sidebar */}
           <div className='lg:col-span-1'>
             <div className='sticky top-8'>
@@ -202,7 +191,6 @@ export default function ArticlePage() {
                   </Link>
                 </nav>
               </div>
-
               {/* Related Articles */}
               <div className='bg-white border rounded-lg p-6 mt-6'>
                 <h3 className='font-semibold mb-4'>Bài viết liên quan</h3>

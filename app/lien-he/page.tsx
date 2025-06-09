@@ -1,5 +1,6 @@
 'use client'
 import ArticleHeader from '@/components/breadcrumb'
+import ContactInfoBox from '@/components/contactBox'
 import { useState } from 'react'
 
 export default function ContactPage() {
@@ -43,9 +44,12 @@ export default function ContactPage() {
           { label: 'Liên hệ' }
         ]}
       />
-      <div className='flex grid-cols-2 mx-auto max-w-7xl px-4 py-12 gap-4'>
-        <div className='flex-1/2 px-4 py-12'>Địa chỉ văn phòng</div>
-        <div className='flex-1/2 px-4 py-12'>
+      <div className='mx-auto max-w-7xl px-4 py-12 gap-4 grid grid-cols-1 md:grid-cols-2'>
+        <div className='px-4 py-4'>
+          <p className='mb-4 text-2xl font-bold'>THÔNG TIN LIÊN HỆ</p>
+          <ContactInfoBox />
+        </div>
+        <div className='px-4 py-4'>
           <p className='mb-4 text-2xl font-bold'>Nhận tư vấn từ chúng tôi</p>
           <form onSubmit={handleSubmit} className='space-y-4'>
             <input

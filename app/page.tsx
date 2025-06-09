@@ -111,11 +111,12 @@ export default function HomePage() {
                   vụ.
                 </h2>
                 <div className='mt-6'>
-                  <button className='cursor-pointer mt-4 bg-primary text-white py-2 px-4 rounded-md hover:bg-secondary'>
-                    <Link href='/san-pham' className='hover:underline'>
-                      Xem sản phẩm
-                    </Link>
-                  </button>
+                  <Link
+                    href='/san-pham'
+                    className='inline-block mt-4 px-4 py-2 bg-primary text-white rounded-lg shadow hover:scale-105 transition-transform duration-300 font-semibold'
+                  >
+                    Xem sản phẩm
+                  </Link>
                 </div>
               </div>
             </div>
@@ -142,37 +143,52 @@ export default function HomePage() {
                   Đảm bảo tiêu chuẩn chất lượng cao nhất cho sản phẩm và dịch
                   vụ.
                 </h2>
-                <button className='cursor-pointer mt-4 bg-primary text-white py-2 px-4 rounded-md hover:bg-secondary'>
-                  <Link href='/san-pham' className='hover:underline'>
-                    Xem sản phẩm
-                  </Link>
-                </button>
+                <Link
+                  href='/san-pham'
+                  className='hover:scale-105 transition-transform duration-300 mt-4 bg-primary text-white py-2 px-4 rounded-md'
+                >
+                  Xem sản phẩm
+                </Link>
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* About Us Section */}
-      <section className='py-16 bg-gray-50'>
+      <section className='py-16 bg-gray-100'>
         <div className='max-w-7xl mx-auto px-4 text-center'>
-          <h2 className='text-5xl md:text-5xl font-bold text-primary mb-8 tracking-wider'>
+          <h2 className='text-4xl font-bold text-primary mb-8 tracking-wider'>
             GIỚI THIỆU
           </h2>
-          <div className='grid md:grid-cols-2 gap-8'>
-            <div>
-              {/* <p className='text-gray-600'>
-                Công ty CP Cơ khí Xây dựng Trần Gia Phát luôn đặt chữ Tâm vào
-                sản xuất, không ngừng nâng cao chất lượng để mang đến sản phẩm
-                và dịch vụ tối ưu cho khách hàng. Với mục tiêu trở thành đơn vị
-                tiên phong trong lĩnh vực vật liệu chống cháy, chúng tôi đề cao
-                các giá trị cốt lõi trong kinh doanh, đặc biệt là sự trung thực
-                và tận tâm.
-              </p> */}
+          <div className=''>
+            <div className='max-w-[1000px] mx-auto pt-6 px-2'>
+              <p className='text-gray-600'>
+                TRẦN GIA PHÁT luôn đặt UY TÍN - TRÁCH NHIỆM - AN TOÀN lên hàng
+                đầu trong từng sản phẩm và công trình. Mỗi bộ cửa chống cháy,
+                mỗi vách ngăn khói hay thiết bị PCCC đều là minh chứng cho cam
+                kết vững chắc vì sự an toàn cộng đồng.
+              </p>
+              <Link
+                href='/gioi-thieu'
+                className='inline-block mt-4 px-4 py-2 bg-primary text-white rounded-lg shadow hover:scale-105 transition-transform duration-300 font-semibold'
+              >
+                Xem thêm
+              </Link>
+            </div>
+            <div className='max-w-[1000px] mx-auto py-8 px-2'>
+              <Image
+                src='/gioi-thieu/thuong-hieu-tran-gia-phat.webp'
+                alt='Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
+                width={1200}
+                height={848}
+              />
+              <p className='text-center text-sm mt-2 italic'>
+                Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát
+              </p>
             </div>
           </div>
         </div>
       </section>
-      {/* Services Preview */}
       {/* Latest Articles */}
       <section className='py-16 bg-white'>
         <div className='max-w-7xl mx-auto px-4'>
