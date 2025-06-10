@@ -3,6 +3,7 @@ import Link from 'next/link'
 import products from '@/data/products.json'
 
 import { Metadata } from 'next'
+import ProductCard from '@/components/productCard'
 export const metadata: Metadata = {
   title: 'Trang chủ | Trần Gia Phát',
   description: 'Trang chủ của công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát',
@@ -198,29 +199,14 @@ export default function HomePage() {
           </h2>
           <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
             {products.slice(0, 6).map((product) => (
-              <Link
+              <ProductCard
                 key={product.href}
-                href={`/san-pham/${product.href}`}
-                className='group'
-              >
-                <div className='bg-gray-100 rounded-lg overflow-hidden'>
-                  <Image
-                    src={product.image}
-                    alt={product.alt}
-                    width={300}
-                    height={200}
-                    className='w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300'
-                  />
-                  <div className='p-6'>
-                    <h3 className='text-xl font-semibold mb-2 group-hover:text-blue-600 uppercase'>
-                      {product.name}
-                    </h3>
-                    <p className='text-gray-600 text-sm'>
-                      {product.description}
-                    </p>
-                  </div>
-                </div>
-              </Link>
+                name={product.name}
+                href={product.href}
+                image={product.image}
+                alt={product.alt}
+                description={product.description}
+              />
             ))}
           </div>
         </div>

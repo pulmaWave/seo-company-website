@@ -30,6 +30,7 @@ export default async function ProductPage() {
               href={product.href}
               image={product.image}
               alt={product.alt}
+              description={product.description}
             />
           ))}
         </div>
