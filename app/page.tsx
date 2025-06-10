@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import products from '@/data/products.json'
 
 import { Metadata } from 'next'
 export const metadata: Metadata = {
@@ -189,30 +190,38 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      {/* Latest Articles */}
+      {/* Products Section */}
       <section className='py-8 md:py-16 bg-white'>
         <div className='max-w-7xl mx-auto px-4'>
           <h2 className='text-3xl font-bold text-center mb-12 text-primary'>
             SẢN PHẨM NỔI BẬT
           </h2>
-          <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-8'>
-            <Link href='/san-pham/cua-cuon-chong-chay' className='group'>
-              <div className='bg-gray-100 rounded-lg overflow-hidden'>
-                <Image
-                  src='/cua-cuon-chong-chay/cua-cuon-chong-chay.webp'
-                  alt='Dự án Cửa cuốn chống cháy tại nhà ga T3 - Sân bay Tân Sơn Nhất'
-                  width={300}
-                  height={200}
-                  className='w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300'
-                />
-                <div className='p-6'>
-                  <h3 className='text-xl font-semibold mb-2 group-hover:text-blue-600'>
-                    CỬA CUỐN CHỐNG CHÁY
-                  </h3>
-                  <p className='text-gray-600 text-sm'>Trần Gia Phát</p>
+          <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
+            {products.slice(0, 6).map((product) => (
+              <Link
+                key={product.href}
+                href={`/san-pham/${product.href}`}
+                className='group'
+              >
+                <div className='bg-gray-100 rounded-lg overflow-hidden'>
+                  <Image
+                    src={product.image}
+                    alt={product.alt}
+                    width={300}
+                    height={200}
+                    className='w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300'
+                  />
+                  <div className='p-6'>
+                    <h3 className='text-xl font-semibold mb-2 group-hover:text-blue-600 uppercase'>
+                      {product.name}
+                    </h3>
+                    <p className='text-gray-600 text-sm'>
+                      {product.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
-            </Link>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

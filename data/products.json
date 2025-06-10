@@ -33,5 +33,12 @@
         "image": "/vach-chong-chay/vach-chong-chay.webp",
         "alt": "vach-chong-chay",
         "description": "Vách chống cháy được làm từ thạch cao chống cháy, đẹp, chịu nhiệt, chịu lửa cao trong nhiều giờ"
+    },
+    {
+        "name": "Màn ngăn cháy",
+        "href": "/man-ngan-chay",
+        "image": "/man-ngan-chay/man-ngan-chay.webp",
+        "alt": "man-ngan-chay",
+        "description": "Màn ngăn cháy học tập, đẹp, chịu nhiệt, chịu lửa cao"
     }
 ]
