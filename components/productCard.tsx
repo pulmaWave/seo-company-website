@@ -18,7 +18,7 @@ const ProductCard = (product: ProductCardProps) => {
       href={`/san-pham/${href}`}
       className='group block h-full' // block và h-full là quan trọng để Link hoạt động như một block và đảm bảo chiều cao card đồng đều
     >
-      <div className='bg-gray-100 rounded-lg overflow-hidden flex flex-col h-full'>
+      <div className='bg-gray-200 rounded-lg overflow-hidden flex flex-col h-full'>
         <div className='relative w-full h-48 overflow-hidden p-2'>
           <Image
             src={image}

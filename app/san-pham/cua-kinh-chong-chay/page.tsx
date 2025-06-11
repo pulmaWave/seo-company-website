@@ -1,8 +1,7 @@
-import Image from 'next/image'
 import Link from 'next/link'
-
 import { Metadata } from 'next'
 import ArticleHeader from '@/components/breadcrumb'
+import RelatedProducts from '@/components/relatedProducts'
 
 export const metadata: Metadata = {
   title: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình',
@@ -193,47 +192,7 @@ export default function ArticlePage() {
               </div>
               {/* Related Articles */}
               <div className='bg-white border rounded-lg p-6 mt-6'>
-                <h3 className='font-semibold mb-4'>Bài viết liên quan</h3>
-                <div className='space-y-4'>
-                  <Link href='#' className='block group'>
-                    <div className='flex gap-3'>
-                      <Image
-                        src='/placeholder.svg?height=60&width=80'
-                        alt='Related article'
-                        width={80}
-                        height={60}
-                        className='rounded object-cover'
-                      />
-                      <div>
-                        <h4 className='text-sm font-medium group-hover:text-blue-600 line-clamp-2'>
-                          Cách tối ưu hóa SEO cho website doanh nghiệp
-                        </h4>
-                        <p className='text-xs text-gray-500 mt-1'>
-                          Trần Gia Phát
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                  <Link href='#' className='block group'>
-                    <div className='flex gap-3'>
-                      <Image
-                        src='/placeholder.svg?height=60&width=80'
-                        alt='Related article'
-                        width={80}
-                        height={60}
-                        className='rounded object-cover'
-                      />
-                      <div>
-                        <h4 className='text-sm font-medium group-hover:text-blue-600 line-clamp-2'>
-                          Xu hướng Digital Marketing 2024
-                        </h4>
-                        <p className='text-xs text-gray-500 mt-1'>
-                          Trần Gia Phát
-                        </p>
-                      </div>
-                    </div>
-                  </Link>
-                </div>
+                <RelatedProducts recentHref='san-pham/cua-kinh-chong-chay' />
               </div>
             </div>
           </div>

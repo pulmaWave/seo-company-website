@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default async function ProductPage() {
   return (
-    <div>
+    <div className='bg-gray-50'>
       <ArticleHeader
         title='SẢN PHẨM | TRẦN GIA PHÁT'
         subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'

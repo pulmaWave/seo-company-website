@@ -209,6 +209,14 @@ export default function HomePage() {
               />
             ))}
           </div>
+          <div className='text-center mt-6 md:mt-8'>
+            <Link
+              href='/san-pham'
+              className='inline-block px-4 py-2 bg-primary text-white rounded-lg shadow hover:scale-105 transition-transform duration-300 font-semibold'
+            >
+              Xem thêm
+            </Link>
+          </div>
         </div>
       </section>
     </>

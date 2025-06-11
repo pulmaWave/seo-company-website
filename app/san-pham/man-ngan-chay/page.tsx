@@ -5,35 +5,32 @@ import ContactInfoBox from '@/components/contactBox'
 import RelatedProducts from '@/components/relatedProducts'
 
 export const metadata: Metadata = {
-  title: 'Vách chống cháy - Giải pháp an toàn cho công trình',
+  title: 'Màn ngăn cháy - Giải pháp an toàn cho công trình',
   description:
-    'Tìm hiểu về Vách chống cháy và các giải pháp an toàn cho công trình.',
+    'Tìm hiểu về màn ngăn cháy và các giải pháp an toàn cho công trình.',
   openGraph: {
-    title: 'Vách chống cháy - Giải pháp an toàn cho công trình',
+    title: 'Màn ngăn cháy - Giải pháp an toàn cho công trình',
     description:
-      'Tìm hiểu về Vách chống cháy và các giải pháp an toàn cho công trình.',
-    url: '/san-pham/cua-cuon-chong-chay',
+      'Tìm hiểu về màn ngăn cháy và các giải pháp an toàn cho công trình.',
+    url: '/san-pham/man-ngan-chay',
     images: [
       {
-        url: '/vach-chong-chay/vach-chong-chay.jpg',
+        url: '/man-ngan-chay/man-ngan-chay.webp',
         width: 1200,
         height: 630,
-        alt: 'Vách chống cháy - Giải pháp an toàn cho công trình'
+        alt: 'Màn ngăn cháy - Giải pháp an toàn cho công trình'
       }
     ]
-  },
-  twitter: {
-    title: 'Giới thiệu | Trần Gia Phát',
-    description: 'Giới thiệu về công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
   },
   icons: {
     icon: 'https://www.trangiaphat.com.vn/favicon.ico'
   },
   keywords: [
-    'vách chống cháy',
-    'vách thạch cao chống cháy',
-    'thạch cao chống cháy',
-    'Trần Gia Phát'
+    'màn ngăn cháy',
+    'màn ngăn cháy ei 60',
+    'màn ngăn cháy ei60',
+    'Trần Gia Phát',
+    'tran gia phat'
   ],
   authors: [
     {
@@ -43,19 +40,58 @@ export const metadata: Metadata = {
   ],
   creator: 'Trần Gia Phát',
   alternates: {
-    canonical: 'https://www.trangiaphat.com.vn/vach-chong-chay'
+    canonical: 'https://www.trangiaphat.com.vn/san-pham/man-ngan-chay'
   }
 }
 export default function ArticlePage() {
   return (
     <div>
+      <script
+        type='application/ld+json'
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'màn ngăn cháy',
+            url: 'https://www.trangiaphat.com.vn/san-pham/man-ngan-chay',
+            logo: 'https://www.trangiaphat.com.vn/logo.png',
+            description: '',
+            contactPoint: {
+              '@type': 'ContactPoint',
+              telephone: '+84-975-252-168',
+              email: 'trangiaphat.corp@gmail.com',
+              contactType: 'customer service',
+              areaServed: 'VN',
+              availableLanguage: ['Vietnamese', 'English']
+            },
+            sameAs: [
+              'https://www.facebook.com/info.trangiaphat.vn',
+              'https://www.youtube.com/@trangiaphatvn'
+            ],
+            additionalType: 'https://schema.org/Organization',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress:
+                'Số 25, Đường 69, Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam',
+              addressLocality: 'Thủ Đức',
+              addressRegion: 'Hồ Chí Minh',
+              postalCode: '700000',
+              addressCountry: 'VN'
+            },
+            foundingDate: '2011-05-25',
+            foundingYear: 2011,
+            foundingLocation:
+              'Số 25, Đường 69, Phường Thạnh Mỹ Lợi, Thành phố Thủ Đức, Thành phố Hồ Chí Minh, Việt Nam'
+          })
+        }}
+      />
       <ArticleHeader
-        title='TRẦN CHỐNG CHÁY - GIẢI PHÁP AN TOÀN CHO CÔNG TRÌNH'
+        title='CỬA CUỐN CHỐNG CHÁY - GIẢI PHÁP AN TOÀN CHO CÔNG TRÌNH'
         subtitle='CÔNG TY CỔ PHẦN CƠ KHÍ XÂY DỰNG TRẦN GIA PHÁT'
         breadcrumbItems={[
           { label: 'Trang chủ', href: '/' },
           { label: 'Sản phẩm', href: '/san-pham' },
-          { label: 'Trần chống cháy' }
+          { label: 'Màn ngăn cháy' }
         ]}
       />
 
@@ -69,10 +105,10 @@ export default function ArticlePage() {
                 id='tran-chong-chay-la-gi'
                 className='text-2xl font-bold mb-6'
               >
-                1. Trần chống cháy là gì?
+                1. Màn ngăn cháy là gì?
               </h2>
               <p className='mb-6'>
-                Trần chống cháy là hệ thống trần được thiết kế đặc biệt để ngăn
+                Màn ngăn cháy là hệ thống trần được thiết kế đặc biệt để ngăn
                 cản sự lan truyền của lửa trong một khoảng thời gian nhất định
                 (thường là 60 phút, 90 phút, hoặc 120 phút). Trần có thể làm từ
                 các vật liệu như thạch cao chống cháy, tấm xi măng, tấm panel
@@ -83,7 +119,7 @@ export default function ArticlePage() {
                 id='vai-tro-tran-chong-chay'
                 className='text-2xl font-bold mb-6'
               >
-                2. Vai trò của trần chống cháy
+                2. Vai trò của màn ngăn cháy
               </h2>
               <ul className='list-disc pl-6 mb-6 space-y-2'>
                 <li>
@@ -109,11 +145,11 @@ export default function ArticlePage() {
                 id='cac-loai-tran-chong-chay'
                 className='text-2xl font-bold mb-6'
               >
-                3. Các loại trần chống cháy tại Trần Gia Phát
+                3. Các loại màn ngăn cháy tại Trần Gia Phát
               </h2>
               <p className='mb-4'>
-                Chúng tôi cung cấp đa dạng sản phẩm trần chống cháy theo từng
-                nhu cầu cụ thể:
+                Chúng tôi cung cấp đa dạng sản phẩm màn ngăn cháy theo từng nhu
+                cầu cụ thể:
               </p>
               <div className='overflow-x-auto mb-6'>
                 <table className='min-w-full border border-gray-300'>
@@ -179,10 +215,10 @@ export default function ArticlePage() {
                 id='lien-he-bao-gia-tran-chong-chay'
                 className='text-2xl font-bold mb-6'
               >
-                5. Liên hệ báo giá trần chống cháy
+                5. Liên hệ báo giá màn ngăn cháy
               </h2>
               <p>
-                Bạn đang tìm kiếm giải pháp trần chống cháy đạt chuẩn cho công
+                Bạn đang tìm kiếm giải pháp màn ngăn cháy đạt chuẩn cho công
                 trình của mình? Đừng ngần ngại liên hệ{' '}
                 <strong>Trần Gia Phát</strong> để được tư vấn và báo giá nhanh
                 chóng!
@@ -203,19 +239,19 @@ export default function ArticlePage() {
                     href='#tran-chong-chay-la-gi'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    1. Trần chống cháy là gì?
+                    1. Màn ngăn cháy là gì?
                   </Link>
                   <Link
                     href='#vai-tro-cua-tran-chong-chay'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    2. Vai trò của trần chống cháy
+                    2. Vai trò của màn ngăn cháy
                   </Link>
                   <Link
                     href='#cac-loai-tran-chong-chay'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    3. Các loại trần chống cháy
+                    3. Các loại màn ngăn cháy
                   </Link>
                   <Link
                     href='#tai-sao-chon-tran-gia-phat'
@@ -227,14 +263,14 @@ export default function ArticlePage() {
                     href='#lien-he-bao-gia-tran-chong-chay'
                     className='block text-sm text-gray-700 hover:text-blue-600 py-1'
                   >
-                    5. Liên hệ báo giá trần chống cháy
+                    5. Liên hệ báo giá màn ngăn cháy
                   </Link>
                 </nav>
               </div>
 
               {/* Related Articles */}
               <div className='bg-white border rounded-lg p-6 mt-6'>
-                <RelatedProducts recentHref='san-pham/tran-chong-chay' />
+                <RelatedProducts recentHref='san-pham/man-ngan-chay' />
               </div>
             </div>
           </div>
