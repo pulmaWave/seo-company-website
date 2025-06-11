@@ -62,12 +62,22 @@ export function Footer() {
           </div>
         </div>
       </div>
-      <div className='border-t border-gray-700 pt-6'>
-        <div className='max-w-7xl mx-auto'>
+      <div className='border-t border-gray-700 pt-6 max-w-7xl mx-auto px-4'>
+        <div className='flex flex-col md:flex-row items-center justify-between gap-2'>
           <p className='text-gray-400 text-sm'>
-            &copy; {new Date().getFullYear()} Trần Gia Phát. All rights
-            reserved.
+            &copy; {new Date().getFullYear()} Trần Gia Phát. All rights reserved
           </p>
+          <div className='text-gray-400 text-sm'>
+            Thiết kế bởi{' '}
+            <a
+              href='https://thinhnc.dev'
+              target='_blank'
+              rel='noopener noreferrer'
+              className='text-primary hover:underline'
+            >
+              thinhnc.dev
+            </a>
+          </div>
         </div>
       </div>
     </footer>
