@@ -10,8 +10,7 @@ export default function RelatedProducts({
   recentHref: string
 }) {
   function getRandomProducts(arr: ProductCardProps[], count: number) {
-    recentHref = recentHref.replace('san-pham/', '')
-    console.log(recentHref)
+    recentHref = recentHref.replace('san-pham', '')
     const filtered = arr.filter((product) => product.href !== recentHref)
     const shuffled = filtered.slice().sort(() => 0.5 - Math.random())
     return shuffled.slice(0, count)
