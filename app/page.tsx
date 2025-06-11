@@ -140,10 +140,10 @@ export default function HomePage() {
                   <br />
                   SẢN PHẨM CHỐNG CHÁY
                 </h1>
-                <h2 className='mt-2 text-sm md:text-base px-4'>
+                <h2 className='mt-2 mb-8 text-sm md:text-base px-4'>
                   Đầy đủ giấy phép, chứng chỉ và hồ sơ năng lực <br />
-                  Đảm bảo tiêu chuẩn chất lượng cao nhất cho sản phẩm và dịch
-                  vụ.
+                  Đảm bảo tiêu chuẩn chất lượng cao nhất cho sản phẩm <br /> và
+                  dịch vụ.
                 </h2>
                 <Link
                   href='/san-pham'
