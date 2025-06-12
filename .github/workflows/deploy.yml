@@ -25,13 +25,14 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa -p ${{ secrets.VPS_PORT }} -o StrictHostKeyChecking=no ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} "echo ✅ SSH to VPS OK"
 
-      - name: Deploy to VPS
+      - name: Pull and build project
         run: |
           ssh -i ~/.ssh/id_rsa -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
-            set -e  # Dừng script nếu có lỗi
-            export NVM_DIR="$HOME/.nvm";
-            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh";
-            nvm use stable;
+            set -e
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+            nvm use stable
+
             echo "➡ Pulling latest code"
             cd /var/www/seo-company-website
             git pull origin main
@@ -41,6 +42,14 @@ jobs:
 
             echo "🔨 Building app"
             npm run build
+          EOF
+
+      - name: Restart app with PM2
+        run: |
+          ssh -i ~/.ssh/id_rsa -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
+            export NVM_DIR="$HOME/.nvm"
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+            nvm use stable
 
             echo "🚀 Restarting app with PM2"
             pm2 restart seo-company-website || pm2 start npm --name "seo-company-website" -- start -- -p 3001
