@@ -29,7 +29,9 @@ jobs:
         run: |
           ssh -i ~/.ssh/id_rsa -p ${{ secrets.VPS_PORT }} ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }} << 'EOF'
             set -e  # Dừng script nếu có lỗi
-
+            export NVM_DIR="$HOME/.nvm";
+            [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh";
+            nvm use stable;
             echo "➡ Pulling latest code"
             cd /var/www/seo-company-website
             git pull origin main
