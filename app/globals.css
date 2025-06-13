@@ -122,7 +122,7 @@ h6 {
         content: '';
         position: absolute;
         inset: 0;
-        border-radius: 9999px;
+        border-radius: inherit;
         background: inherit;
         animation: pulse-ring 500ms cubic-bezier(0.3, 0, 0.2, 1) infinite;
     }

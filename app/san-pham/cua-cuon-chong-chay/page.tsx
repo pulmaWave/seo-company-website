@@ -3,6 +3,8 @@ import { Metadata } from 'next'
 import ArticleHeader from '@/components/breadcrumb'
 import ContactInfoBox from '@/components/contactBox'
 import RelatedProducts from '@/components/relatedProducts'
+import Image from 'next/image'
+import ProductDetail from '@/components/productDetail'
 
 export const metadata: Metadata = {
   title: 'Cửa cuốn chống cháy - Giải pháp an toàn cho công trình',
@@ -44,6 +46,31 @@ export const metadata: Metadata = {
   }
 }
 export default function ArticlePage() {
+  const product2 = {
+    title: 'CỬA CUỐN CHỐNG CHÁY',
+    productCode: 'CCCC-002',
+    price: 'Liên hệ',
+    features: [
+      'Lớp cửa cuốn: Lớp cửa này làm từ vật liệu đặc biệt, được thiết kế để chịu được nhiệt độ cao',
+      'Thanh dẫn hướng: Được làm từ thép chống cháy, đảm bảo cửa hoạt động ổn định, định hướng cửa cuốn đóng mở đúng lộ trình',
+      'Động cơ motor điện chống cháy và bộ điều khiển trung tâm: Động cơ điện mạnh mẽ, chống cháy hoạt động dưới sự quản lý của Bộ điều khiển trung tâm, được kết nối với hệ thống PCCC',
+      'Thanh đáy: Được làm từ thép chống cháy, giúp cửa đóng kín, ngăn nhiệt, khói lan rộng'
+    ],
+    images: [
+      {
+        src: '/cua-cuon-chong-chay/cua-cuon-chong-chay.webp',
+        alt: 'Cửa cuốn chống cháy - Hình chính'
+      },
+      {
+        src: '/tran-chong-chay/tran-chong-chay.webp',
+        alt: 'trần chống cháy - Góc nhìn 1'
+      },
+      {
+        src: '/cua-kinh-chong-chay/cua-kinh-chong-chay.webp',
+        alt: 'cửa kính chống cháy - Góc nhìn 2'
+      }
+    ]
+  }
   return (
     <div>
       <script
@@ -94,7 +121,11 @@ export default function ArticlePage() {
           { label: 'Cửa cuốn chống cháy' }
         ]}
       />
-
+      <div className='container mx-auto py-8 px-4'>
+        <div className='mb-16'>
+          <ProductDetail product={product2} />
+        </div>
+      </div>
       {/* Article Content */}
       <div className='max-w-7xl mx-auto px-4 py-12'>
         <div className='grid lg:grid-cols-4 gap-8'>
@@ -114,7 +145,18 @@ export default function ArticlePage() {
                 làm từ các vật liệu như thạch cao chống cháy, tấm xi măng, tấm
                 panel chống cháy có lớp lõi cách nhiệt,…
               </p>
-
+              <div className='max-w-[1000px] mx-auto text-center bg-gray-100 rounded-lg shadow-md p-2 mt-4 md:mt-8 hover:shadow-lg transition-shadow duration-300'>
+                <Image
+                  src='/cua-cuon-chong-chay/cua-cuon-chong-chay.webp'
+                  alt='Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát'
+                  width={1000}
+                  height={707}
+                />
+                <p className='text-sm mt-2 italic'>
+                  Giới thiệu Công ty Cổ phần Cơ khí Xây dựng Trần Gia Phát
+                </p>
+              </div>
+              <br />
               <h2
                 id='vai-tro-tran-chong-chay'
                 className='text-2xl font-bold mb-6'

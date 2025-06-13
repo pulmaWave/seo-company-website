@@ -27,7 +27,7 @@ const items = [
 
 export default function SocialWidget() {
   return (
-    <div className='fixed right-4 top-1/3 flex flex-col gap-8 z-[60]'>
+    <div className='fixed right-4 top-1/3 flex flex-col gap-8 z-[50]'>
       {items.map((item) => (
         <Link
           key={item.href}
