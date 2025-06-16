@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 }
 export default function ArticlePage() {
   const product2 = {
-    title: 'CỬA CUỐN CHỐNG CHÁY',
+    title: 'Mô tả sản phẩm',
     productCode: 'CCCC-002',
     price: 'Liên hệ',
     features: [

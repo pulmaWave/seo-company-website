@@ -19,12 +19,21 @@ export default function ScrollToTop() {
     <button
       aria-label='Lên đầu trang'
       onClick={handleClick}
-      className={`fixed cursor-pointer bottom-6 right-6 z-50 rounded-full bg-[#164f72] p-3 text-white shadow-lg transition-all
-        hover:opacity-90 ${
-          show ? 'opacity-100' : 'pointer-events-none opacity-0'
-        }`}
+      className={`group fixed cursor-pointer bottom-5 right-5 z-50 rounded-xl bg-[#164f72] p-1 text-white shadow-lg transition-all flex flex-col justify-center items-center font-bold hover:opacity-90 ${
+        show ? 'opacity-100' : 'pointer-events-none opacity-0'
+      }`}
+      style={{ width: 55, height: 55 }}
     >
-      <ArrowUp size={20} strokeWidth={2.5} />
+      <ArrowUp
+        size={16}
+        strokeWidth={3}
+        className='mb-1 group-hover:animate-bounce'
+      />
+      <span className='text-center leading-[12px]' style={{ fontSize: 9 }}>
+        ĐẦU
+        <br />
+        TRANG
+      </span>
     </button>
   )
 }
