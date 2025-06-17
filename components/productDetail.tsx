@@ -55,7 +55,9 @@ export default function ProductDetail({ product }: { product: ProductProps }) {
               />
 
               <div className='absolute inset-0 bg-black/5 hover:bg-black/10 transition-colors flex items-center justify-center'>
-                <span className='sr-only'>Click to view larger image</span>
+                <span className='text-white text-lg font-semibold bg-black/60 px-3 py-1 rounded shadow'>
+                  Click to view larger image
+                </span>
               </div>
             </div>
           </div>

@@ -104,6 +104,7 @@ export default function NavigationEnhancer({
       {/* Mobile Menu Toggle Button */}
       <div className='lg:hidden'>
         <button
+          aria-label='Toggle Mobile Menu'
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className='p-2 border rounded'
         >
@@ -129,7 +130,7 @@ export default function NavigationEnhancer({
                 <div key={item.id}>
                   <Link
                     href={item.href}
-                    className={`block font-medium hover:text-primary transition-colors ${
+                    className={`block font-medium hover:text-blue-900 transition-colors ${
                       isParentActive(item) ? 'text-primary' : 'text-gray-700'
                     }`}
                     onClick={() => setMobileMenuOpen(false)}
@@ -142,7 +143,7 @@ export default function NavigationEnhancer({
                         <Link
                           key={sub.id}
                           href={sub.href}
-                          className={`block text-sm hover:text-blue-600 transition-colors ${
+                          className={`block text-sm hover:text-blue-900 transition-colors ${
                             pathname.startsWith(sub.href)
                               ? 'text-primary'
                               : 'text-gray-600'

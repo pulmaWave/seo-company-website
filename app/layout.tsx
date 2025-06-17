@@ -30,9 +30,7 @@ export default async function RootLayout({
                       className='w-4 h-4 text-primary animate-phone-ring'
                       style={{ transformOrigin: 'center' }}
                     />
-                    <span className='text-primary font-bold animate-pulse'>
-                      0975 252 168
-                    </span>
+                    <span className='text-primary font-bold'>0975 252 168</span>
                   </a>
                 </div>
                 <div className='hidden sm:block'>

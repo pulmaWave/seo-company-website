@@ -29,7 +29,7 @@ const ProductCard = (product: ProductCardProps) => {
           />
         </div>
         <div className='p-6 flex flex-col flex-grow'>
-          <h3 className='text-xl font-semibold mb-2 group-hover:text-blue-600 uppercase'>
+          <h3 className='text-xl font-semibold mb-2 group-hover:text-blue-900 uppercase'>
             {name}
           </h3>
           <p className='text-gray-600 text-sm flex-grow line-clamp-3'>
