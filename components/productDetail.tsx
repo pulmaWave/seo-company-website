@@ -68,7 +68,7 @@ export default function ProductDetail({ product }: { product: ProductProps }) {
               {product.images.map((image, index) => (
                 <button
                   key={index}
-                  className={`relative min-w-[80px] h-[80px] border-2 ${
+                  className={`cursor-pointer relative min-w-[80px] h-[80px] border-2 ${
                     selectedImage === index
                       ? 'border-blue-900'
                       : 'border-gray-200'

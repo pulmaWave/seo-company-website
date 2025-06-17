@@ -109,7 +109,7 @@ export default function ImageModal({
     <div className='fixed inset-0 z-51 bg-black bg-opacity-90 flex items-center justify-center'>
       <button
         onClick={onClose}
-        className='absolute top-4 right-4 z-10 text-white bg-black/50 p-2 rounded-full hover:bg-black/70'
+        className='cursor-pointer absolute top-4 right-4 z-10 text-white bg-black/50 p-2 rounded-full hover:bg-black/70'
         aria-label='Close modal'
       >
         <X className='w-6 h-6' />
@@ -137,7 +137,7 @@ export default function ImageModal({
         <>
           <button
             onClick={handlePrevious}
-            className='absolute left-2 md:left-8 p-2 bg-black/50 rounded-full text-white hover:bg-black/70 z-20'
+            className='absolute cursor-pointer left-2 md:left-8 p-2 bg-black/50 rounded-full text-white hover:bg-black/70 z-20'
             aria-label='Previous image'
             type='button'
           >
@@ -146,7 +146,7 @@ export default function ImageModal({
 
           <button
             onClick={handleNext}
-            className='absolute right-2 md:right-8 p-2 bg-black/50 rounded-full text-white hover:bg-black/70 z-20'
+            className='cursor-pointer absolute right-2 md:right-8 p-2 bg-black/50 rounded-full text-white hover:bg-black/70 z-20'
             aria-label='Next image'
             type='button'
           >
